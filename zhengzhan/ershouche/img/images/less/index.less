@@ -1,0 +1,101 @@
+.header{
+	width:100%;
+	height:50px;
+	background:#f2f2f2;
+	.logo{
+		width:190px;
+		height:50px;
+		text-indent:-999em;
+		a{
+			width:190px;
+			height:50px;
+			display:block;
+			background:url(../img/logo.png) no-repeat;
+		}
+	}
+	.address{
+		width:70px;
+		height:32px;
+		padding-top:18px;
+		font-size:12px;
+		.bg{
+			width:14px;
+			height:20px;
+			background:url(../img/bg.png) no-repeat -20px -20px;
+			margin-right:3px;
+		}
+		
+	}
+}
+.banner{
+	width:320px;
+	height:45px;
+	background:url(../img/banner.png) no-repeat;
+	margin:0 auto;
+	padding-top:105px;
+	.search{
+		padding-left:46px;
+		width:250px;
+		height:38px;
+		background:url(../img/search.png) no-repeat #fff 15px center;
+		border:1px solid #ccc;
+		margin:0 auto;
+		input{
+			width:250px;
+			height:38px;
+		    border:none;
+		}
+	}
+}
+
+.con(@url){
+	width:35px;
+	height:35px;
+	
+	display:block;
+	background:@url no-repeat;
+	background-size:100%;
+	margin:10px auto 0;
+	}
+
+.nav{
+	width:320px;
+	height:70px;
+	margin:0 auto;
+	li{
+		width:80px;
+		height:70px;
+		font-size:12px;
+		text-align:center;
+		border-right:1px solid #f2f2f2;
+		box-sizing:border-box;
+		.con1{
+			.con(url(../img/ico1.png));
+		}
+		.con2{
+			.con(url(../img/ico2.png));
+		}
+		.con3{
+			.con(url(../img/ico3.png));
+		}
+		.con4{
+			.con(url(../img/ico4.png));
+		}
+		p{margin-top:5px;}
+	}
+	.last{
+		border-right:none;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="css/bootstrap.css"/>
+  <link rel="stylesheet" type="text/css" href="css/yz_index.css"/>
+  <style>
+    #largeDiv{
+      background:url('img/detail/jd_2.jpg') no-repeat;
+      width:300px;
+      height:400px;
+      position:absolute;
+      left:937px;
+      top:165px;
+      display: none;
+      border:5px solid #ce8483;
+    }
+    #mask{
+      width:200px;
+      height:200px;
+      background: #ce8483;
+      opacity:0.3;
+      position:absolute;
+      top:168px;
+      left:249px;
+    }
+    #superMask{
+      width:575.5px;
+      height:575.5px;
+      position:absolute;
+      top:0;
+      left:0;
+    }
+    .imgs img:hover{
+      border:1px solid #ce8483;
+    }
+    .col-md-4 h5 span{
+      color:#af8877;
+    }
+    .col-md-4 p{
+      font-size:14px;
+    }
+    .col-md-4 input{
+      border:1px solid #ce8483;
+      width:80px;
+    }
+    .col-md-4 .btn{
+      width:300px;
+      height:50px;
+      background:#FDCEC6;
+      border-radius: 15px;
+    }
+    .lis li a{
+      width:300px;
+      height:50px;
+      background:#EFE7E4;
+      text-align:center;
+      color:#ce8483;
+      font-size:16px;
+      margin-bottom:5px;
+    }
+    .nav-tabs > li.active > a{
+      background:#ad8977 !important;
+    }
+   #pane1{
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+
+  </div>
+  <section id="main">
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6">
+          <div>
+            <img src="img/detail/d_1.jpg" alt="" id="mImg" class="img-responsive"/>
+            <div id="mask"></div>
+            <div id="superMask"></div>
+          </div>
+        </div>
+        <div class="col-md-2 imgs">
+          <img src="img/detail/small5.jpg" alt=""/>
+          <img src="img/detail/small4.jpg" alt=""/>
+          <img src="img/detail/small3.jpg" alt=""/>
+          <img src="img/detail/small2.jpg" alt=""/>
+        </div>
+        <div class="col-md-4">
+          <h4>燕姿女装 2016年秋季新品一字领套头毛衣167R5I060</h4><br/>
+          <h5><span>燕姿女装 2016年秋季新品一字领套头毛衣167R5I060</span></h5><br/>
+          <h5><span>￥399.00</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 请[登录]后查看优惠价格</h5><br/>
+          <hr/>
+          <p>颜色：<img src="img/detail/size.jpg" alt=""/></p>
+
+          <hr/>
+          <span>
+          <span>请选择尺码:</span>&nbsp;&nbsp;
+          <button>ML</button>&nbsp;&nbsp;
+          <button>SM</button>&nbsp;&nbsp;
+          </span>
+          <br/><br/><br/>
+          <p>
+            数量：
+            <button>-</button>
+            <input type="number" value="1" min="0"/>
+            <button>+</button>
+          </p>
+          <hr/>
+          <button class="btn">加入购物车</button>
+          <hr/>
+          <p>退换货 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 七天无理由退换</p>
+          <p>配送 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 全场免邮</p>
+          <p>未收藏 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="img/detail/coll1.png" alt=""/><img src="img/detail/coll3.png" alt=""/><img src="img/detail/coll2.png" alt=""/><img src="img/detail/coll4.png" alt=""/></p>
+          <hr/>
+        </div>
+      </div>
+      <div id="largeDiv"></div>
+      <div class="row">
+        <!-- TODO 标签页 -->
+        <ul class="nav nav-tabs lis">
+          <li class="active"><a data-toggle="tab" href="#pane1">产品介绍</a></li>
+          <li><a data-toggle="tab" href="#pane2">商品评价</a></li>
+          <li><a data-toggle="tab" href="#pane3">规格参数</a></li>
+          <li><a data-toggle="tab" href="#pane4">售后服务</a></li>
+        </ul>
+        <!-- TODO 面板 -->
+        <div class="tab-content">
+          <div id="pane1" class="tab-pane active">
+            <img src="img/detail/top1.jpg" alt=""/>
+            <img src="img/detail/top2.jpg" alt=""/>
+            <img src="img/detail/top3.jpg" alt=""/>
+            <img src="img/detail/top4.jpg" alt=""/>
+            <img src="img/detail/top5.jpg" alt=""/>
+            <img src="img/detail/top6.jpg" alt=""/>
+            <img src="img/detail/top7.jpg" alt=""/>
+          </div>
+          <div id="pane2" class="tab-pane">
+            <p>商品评价页，正在创建中.....</p>
+          </div>
+          <div id="pane3" class="tab-pane">
+            <p>规格参数页，正在创建中.....</p>
+          </div>
+          <div id="pane4" class="tab-pane">
+            <p>售后服务页，正在创建中.....</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="footer">
+
+  </div>
+  <script src="js/jquery-1.11.3.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script>
+    $('.btn').click(function(){
+      alert('感谢您对燕姿的关注，本店暂未开通购物车功能，请您到最近的实体店铺购买');
+      window.open('shopList.html','_blank')
+    })
+    $('.header').load('headerPage.html');
+    $('.footer').load('footerPage.html');
+  </script>
+  <script src="js/detail.js"></script>
+</body>
+</html>

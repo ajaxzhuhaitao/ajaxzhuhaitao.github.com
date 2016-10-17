@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>燕姿首页</title>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" href="css/bootstrap.css"/>
+  <link rel="stylesheet" type="text/css" href="css/yz_index.css"/>
+  <style>
+      #main input{
+        width:500px;
+      }
+    #main{
+      margin-top:50px;
+    }
+    #u_pwd{
+      float:left;
+    }
+    .container-fluid span{
+      display:block;
+      width:500px;
+      line-height:34px;
+      color:#b61b1f;
+      font-size:15px;
+    }
+  </style>
+</head>
+<body>
+<div class="header"></div>
+<div id="main">
+  <div class="container-fluid">
+    <div class="row">
+      <form class="form-horizontal">
+        <div class="form-group">
+          <label for="user" class="col-md-2 control-label">用户名:</label>
+          <div class="col-md-5">
+            <input type="text" class="form-control" id="user" placeholder="请输入用户名" required name="user">
+          </div>
+          <span class="col-md-5"></span>
+        </div>
+        <div class="form-group">
+          <label for="u_pwd" class="col-md-2 control-label">密码:</label>
+          <div class="col-md-5">
+            <input type="password" class="form-control" id="u_pwd" placeholder="请输入密码" name="pwd">
+          </div>
+          <span class="col-md-5"></span>
+        </div>
+        <div class="form-group">
+          <label for="cpwd" class="col-md-2 control-label">确认密码:</label>
+          <div class="col-md-5">
+            <input type="password" class="form-control" id="cpwd" placeholder="请再次输入密码" name="rpwd">
+          </div>
+          <span class="col-md-5"></span>
+        </div>
+        <div class="form-group">
+          <label for="email" class="col-md-2 control-label">邮箱:</label>
+          <div class="col-md-5">
+            <input type="email" class="form-control" id="email" placeholder="请再次输入密码" name="email">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="phone" class="col-md-2 control-label">手机号:</label>
+          <div class="col-md-5">
+            <input type="phone" class="form-control" id="phone" placeholder="请输入手机号" name="phone">
+          </div>
+          <span class="col-md-5"></span>
+        </div>
+        <div class="form-group">
+          <div class="col-md-offset-2 col-md-10">
+            <button type="button" class="btn btn-default" id="btn">提交</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<div class="footer"></div>
+<script src="js/jquery-1.11.3.js"></script>
+<script>
+  /*提交请求到服务器*/
+  $('#btn').click(function(){
+    var u=user.value;
+    var p=u_pwd.value;
+    var rp=cpwd.value;
+    var e=email.value;
+    var p=phone.value;
+    $.get('php/login.php',{user:u,pwd:p,rpwd:rp,email:e,phone:p},function(txt){
+        console.log(txt);
+      if(txt=='succ'){
+        if(confirm('注册成功，是否登录？')){
+        window.open('register.html');
+        }
+      }
+    })
+  })
+  $('.header').load('headerPage.html');
+  $('.footer').load('footerPage.html');
+  $('#user').blur(function(){
+    var val=$('#user').val();
+    if(val){
+    $.get('php/checkuser.php','user='+val,function(txt){
+      if(txt=='succ'){
+        $('#user').parent().next('span').css('display','block').html('您的用户名可以使用').css('color','#20b138');
+      }else if(txt=='fail'){
+        $('#user').parent().next('span').css('display','block').html('您的用户名已被注册').css('color',"#e4393c");
+      }
+    })
+    }
+  })
+  $('#user').focus(function(){
+    $('#user').parent().next('span').css('display','none').html('');
+  })
+  /*密码强度: 6-8位，字母，数字的组合。要求至少包含一个大写字母和一位数字
+  1. 预判不全由字母组成: 说明可能包含数字或特殊符号
+  (?![A-Za-z]+$)
+  2. 预判不全由小写字母和数字组成:
+    说明可能包含大写字母或特殊符号
+    (?![a-z0-9]+$)
+  3. [A-Za-z0-9]{6,8}*/
+  $('#u_pwd').blur(function(){
+   var reg=/(?![a-zA-Z]+$)(?![a-z0-9]+$)[a-zA-Z0-9]{6,8}/
+   var val= $('#u_pwd').val();
+    if(reg.test(val)==false){
+      $('#u_pwd').parent().next('span').html('密码为6至8位，并且密码为数字和字母的组合！').css({'display':'block','color':'#e4393c'});
+    }else{
+      $('#u_pwd').parent().next('span').html('请保存好您的密码！').css({'display':'block','color':'#20b138'});
+    }
+  })
+  $('#cpwd').focus(function(){
+    $('#cpwd').parent().next('span').css('display','none').html('');
+  })
+  $('#cpwd').blur(function(){
+    var val=$('#u_pwd').val();
+    var cval=$('#cpwd').val();
+    if(val!=cval){
+      $('#cpwd').parent().next('span').html('您两次输入的密码不一致，请重新输入。').css({'display':'block','color':'#e4393c'});
+    }
+  })
+  $('#u_pwd').focus(function(){
+    $('#u_pwd').parent().next('span').css('display','none').html('');
+  })
+
+  $('#phone').blur(function(){
+    var reg=/\d{9}/;
+    var val=$('#phone').val();
+    if(reg.test(val)==false){
+      $('#phone').parent().next('span').html('手机号码为11位数字！').css({'display':'block','color':'#e4393c'});
+    }
+  })
+  $('#phone').focus(function(){
+    $('#phone').parent().next('span').css('display','none').html('');
+  })
+</script>
+</body>
+</html>

@@ -1,0 +1,351 @@
+﻿/*banner*/
+.banner{ width: 100%; height: 580px; margin: 0 auto;background:#0b0b0b;}
+.banner .ban{height: 580px; position: relative; width: 6000px;}
+.banner .ban li{ float: left; height: 580px; width: 1920px;}
+.banner .ban li img{}
+.banner .shuf{ width: 180px; height: 4px; margin: -20px 0 0 -90px;position: absolute; left: 50%;}
+.banner .shuf li{ width: 30px; height: 4px; float: left; background:url(img/serivce-icon.png) no-repeat -153px -336px; display: block; margin: 0 15px;}
+.banner .shuf .now{ background-position: -153px -344px;}
+.banIn01{ width: 1000px; height:auto; position: absolute; left: 50%; margin: 240px 0 0 -500px;}
+.banIn01 .Img02{ margin: 0 auto; width: 238px; height: 69px; padding: 0 0 20px 0;}
+.banIn01 .line{ width: 1000px; height: 1px; background: #FFF; opacity: 0.5;}
+.banIn01 .Img03{ margin: 0 auto; width: 438px; height: 59px; padding: 20px 0 0 0;}
+
+/*服务*/
+.service{ width: 100%; height: 338px; background:#66ae8a url(img/service.png) no-repeat top center; } 
+.serviceIn{ width: 1000px; height: 268px; margin: 0 auto;padding: 70px 0 0 0;}
+.serviceIn dl{ width: 230px; height: auto; color:#FFF; float: left; margin: 0 155px 0 0;}
+.serviceIn dl dt{ background:url(img/serivce-icon.png) no-repeat; width: 80px; height: 80px; margin: 0 auto;-moz-transition: all 0.5s; -ms-transition: all 0.5s; -o-transition: all 0.5s; -webkit-transition: all 0.5s;}
+.serviceIn dl dt:hover{-moz-transform:rotate(360deg);-ms-transform:rotate(360deg);-o-transform:rotate(360deg);-webkit-transform:rotate(360deg); transform:rotate(360deg); }
+.serviceIn dl dd{ width:230px; margin: 30px 0 0 0;}
+.serviceIn dl dd h3{ margin:0 0 20px 0; font-size: 14px; text-align: center;}
+.serviceIn .Dl03{ margin: 0;}
+.Dl01 .Dt01{ background-position: -103px 0px;}
+.Dl02 .Dt02{ background-position: -103px -88px;}
+.Dl03 .Dt03{ background-position: -103px -176px;}
+
+/*UI*/
+.ul{ width: 100%; height: auto;background: #1e1e1e; overflow: hidden;}
+.ul .ulIn{ width: 1000px;height: auto; margin: 0 auto; overflow: hidden;}
+.ulIn .ulTop{ background:url(img/fish.png) no-repeat center top; width: 1000px; height: 605px; margin: -450px 0 0 5px;}
+.ulTop .btUi{ margin: 0 auto; padding: 450px 0 0 0;}
+.ulCen{ width: 1000px; margin: 0 auto;}
+.ulCen .ucT{ width: 1000px; overflow: hidden;}
+.ucT .ucLeft{width: 640px; float: left; padding: 50px 0 0 0; box-sizing:border-box;}
+.ucLeft li{ float: left; margin: 0 42px 30px 0;}
+.ucRight{width: 315px; height:130px; line-height: 130px; font-size:24px; text-align: center; float: right; background:url(img/tag-1.png) no-repeat; margin: 95px 0 0 0;}
+.ucA{ width: 500px; margin: 30px auto; text-align: center; line-height: 24px;}
+.ucA .p01{ font-size:18px; margin: 0 0 10px 0;}
+.ucA .p02{ font-size:16px;}
+.stage{ width: 1000px; margin: 75px auto;position: relative;height: 257px;position: relative;overflow: hidden;}
+.stage ul{width: 4000px; overflow: hidden; height: 257px;position: absolute; top: 0; left: 0;}
+.stage ul li{ float: left; margin: 0 32px 0 0; width: 269px; height: 257px; background:#000;}
+
+.ucRp{ padding: 10px 0 0 0; width: 230px; text-align: center; height: 48px; line-height: 48px; margin: 0 auto; font-size: 18px;}
+
+.ucP{ width: 1000px; margin: 0 auto;}
+.upLeft{ background:url(img/tag-2.png) no-repeat; width: 323px; height: 131px; line-height: 131px; text-align: center; font-size: 24px;}
+.ucP .upRight{ width:1000px; margin: 30px auto; position: relative; padding: 0 0 50px 0;}
+.upRight .app{ width: 392px; height: 664px; background-color:rgba(255,255,255,0.1); margin: 20px auto; padding: 20px 20px; box-sizing: border-box;}
+.app .appUl{ width:352px; height: 624px; position: relative;}
+.app .appUl li{ position: absolute; cursor: pointer; display: none;}
+.upRight .appLeft,.upRight .appRight{ width: 64px; height: 64px; background:url(img/button.png) no-repeat -177px 0; position: absolute; top: 50%;margin: -32px 0 0 0}
+.upRight .appLeft{left: 45px;}
+.upRight .appRight{right: 45px; background-position: -177px -68px;}
+.ulIn .ulFot{ background:url(img/fish.png) no-repeat center bottom; width: 1000px; height: 850px; margin: 0 0 -300px 5px; overflow: hidden;}
+.ulFot .ufLeft{ background:url(img/tag-3.png) no-repeat; width: 322px; height: 127px; line-height: 127px; text-align: center;font-size: 24px; float: right;}
+.ulFot .ufRight{ height: 410px; width: 1000px; margin: 0 auto; float: left;}
+.ufRight .urUl{height: 410px;}
+.ufRight .urUl li{ float: left; margin: 20px 20px; background-color:rgba(255,255,255,0.1); height: 292px; width: 292px; border-radius: 50%;}
+.ufRight .urUl li img{ width: 260px; height: 260px; margin: 16px auto; display: block; -moz-transition: all 1s; -ms-transition: all 1s; -o-transition: all 1s; -webkit-transition: all 1s;}
+.ufRight .urUl li img:hover{-moz-transform:rotateY(360deg); -ms-transform:rotateY(360deg); -o-transform:rotateY(360deg); -webkit-transform:rotateY(360deg); transform:rotateY(360deg);}
+
+
+/*web*/
+.web{ width: 100%; height: auto; background: #1c9688 url(img/web-color.png) no-repeat; padding: 0 0 50px 0;}
+.webIn{ width: 1000px; margin: 0 auto;}
+.webTop{ width: 208px; height: 110px; margin: 0 auto;}
+.webA{ width: 500px; margin: 30px auto; text-align: center; line-height: 24px;}
+.webA .p01{ font-size:18px; margin: 0 0 10px 0;}
+.webA .p02{ font-size:16px;}
+/*Gallery*/
+#gallery {margin:0 auto;height:420px;overflow:hidden; z-index:1;}
+.container_image{margin:0 auto;position:relative;width:100%;font-size:.8125em;}	
+/*===== gallery =====*/
+.roundabout-holder{width:840px;height:420px;margin:0 auto;}
+.roundabout-moveable-item {width: 646px;height: 416px;cursor: pointer;}
+.roundabout-moveable-item img{width:100%;}
+.roundabout-in-focus {border:0px solid rgba(0, 0, 0, 0.2);}
+/*选择container*/
+#info {
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;				
+	background:#fcf8e3;
+	border:1px solid  #fbeed5;
+	width:95%;
+	max-width:900px;
+	margin:0 auto 40px auto;
+	font-family:arial;
+	font-size:12px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+}
+
+	#info .info-wrapper {
+		padding:10px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+
+	}
+	
+	#info a {
+		color:#c09853;
+		text-decoration:none;
+	}
+	
+	#info p {
+		margin:5px 0 0 0;
+	}
+
+
+.container { 
+	position: relative; 
+	width: 960px; 
+	height: 600px;
+	margin: 0 auto; 
+	-webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;	
+}
+ 
+#filters {
+	margin:1%;
+	padding:0;
+	list-style:none;
+}
+
+	#filters li {
+		float:left;
+	}
+	
+	#filters li span {
+		display: block;
+		padding:5px 20px;		
+		text-decoration:none;
+		color:#fff;
+		cursor: pointer;
+	}
+	
+	#filters li span.active {
+		background: #e95a44;
+		color:#fff;
+	}
+ 
+
+ 
+#portfoliolist .portfolio {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	width:23%;
+	margin:1%;
+	display:none;
+	float:left;
+	overflow:hidden;
+}
+
+	.portfolio-wrapper {
+		overflow:hidden;
+		position: relative !important;
+		background: #666;
+		cursor:pointer;
+	}
+
+	.portfolio img {
+		max-width:100%;
+		position: relative;
+	}
+	
+	.portfolio .label {
+		position: absolute;
+		width: 100%;
+		height:40px;
+		bottom:-40px;
+	}
+
+		.portfolio .label-bg {
+			background: #e95a44;
+			width: 100%;
+			height:100%;
+			position: absolute;
+			top:0;
+			left:0;
+		}
+	
+		.portfolio .label-text {
+			color:#fff;
+			position: relative;
+			z-index:500;
+			padding:5px 8px;
+		}
+			
+			.portfolio .text-category {
+				display:block;
+				font-size:9px;
+			}
+	
+	
+	
+
+
+
+/* #Tablet (Portrait) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	.container {
+		width: 768px; 
+	}
+}
+
+
+/*  #Mobile (Portrait) - Note: Design for a width of 320px */
+@media only screen and (max-width: 767px) {
+	.container { 
+		width: 95%; 
+	}
+	
+	#portfoliolist .portfolio {
+		width:48%;
+		margin:1%;
+	}		
+
+	#ads {
+		display:none;
+	}
+	
+}
+
+
+/* #Mobile (Landscape) - Note: Design for a width of 480px */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	.container {
+		width: 70%;
+	}
+	
+	#ads {
+		display:none;
+	}
+	
+}
+
+/* #Clearing */
+
+/* Self Clearing Goodness */
+.container:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+
+.clearfix:before,
+.clearfix:after,
+.row:before,
+.row:after {
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0; }
+.row:after,
+.clearfix:after {
+  clear: both; }
+.row,
+.clearfix {
+  zoom: 1; }
+
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+/*ican do*/
+.can{ width: 100%; height: auto; background:#000608 url(img/ican-bg.png) no-repeat center top; padding: 0 0 41px 0;}
+.canIn{ width: 1000px; margin: 0 auto; position: relative;}
+.canTop{ margin: 0 auto; width: 153px; height: 110px;}
+.canCen{ background:url(img/cricle1.png) no-repeat; margin: 10px auto; width: 473px; height: 473px;}
+.canUl li{ float: left; width: 132px; height: 180px; display: block;} 
+.canUl .ulOne,.canUl .ulTwo,.canUl .ulThr,.canUl .ulFour{ background:url(img/95.png) no-repeat; width: 123px; height: 124px; line-height: 24px; position: absolute;text-align: center; font-size: 18px; padding: 50px 0 0 0;}
+.canUl .ulOne{ left: 0; top: 28%; }
+.canUl .ulTwo{ left: 25%; top: 40%; background:url(img/95-1.png) no-repeat;}
+.canUl .ulThr{ left: 60%; top: 25%; background:url(img/87.png) no-repeat; }
+.canUl .ulFour{ right: 0; top: 35%; background:url(img/80.png) no-repeat; }
+.canUl .ulOne:hover,.canUl .ulTwo:hover,.canUl .ulThr:hover,.canUl .ulFour:hover{ -webkit-animation:go 2s linear 0s infinite alternate; cursor: pointer; transition:all 0.5s; -moz-animation:go 2s linear 0s infinite alternate; cursor: pointer; transition:all 0.5s; -ms-animation:go 2s linear 0s infinite alternate; cursor: pointer; transition:all 0.5s; -o-animation:go 2s linear 0s infinite alternate; cursor: pointer; transition:all 0.5s;}
+	@-webkit-keyframes go{
+			0%{ transform:rotate(0deg)}
+			25%{ transform:rotate(-15deg)}	
+			50%{ transform:rotate(0deg)}
+			75%{ transform:rotate(15deg)}
+			100%{ transform:rotate(0deg)}
+		}
+	@-o-keyframes go{
+			0%{ transform:rotate(0deg)}
+			25%{ transform:rotate(-15deg)}	
+			50%{ transform:rotate(0deg)}
+			75%{ transform:rotate(15deg)}
+			100%{ transform:rotate(0deg)}
+		}
+	@-ms-keyframes go{
+			0%{ transform:rotate(0deg)}
+			25%{ transform:rotate(-15deg)}	
+			50%{ transform:rotate(0deg)}
+			75%{ transform:rotate(15deg)}
+			100%{ transform:rotate(0deg)}
+		}
+	@-moz-keyframes go{
+			0%{ transform:rotate(0deg)}
+			25%{ transform:rotate(-15deg)}	
+			50%{ transform:rotate(0deg)}
+			75%{ transform:rotate(15deg)}
+			100%{ transform:rotate(0deg)}
+		}
+	@keyframes go{
+			0%{ transform:rotate(0deg)}
+			25%{ transform:rotate(-15deg)}	
+			50%{ transform:rotate(0deg)}
+			75%{ transform:rotate(15deg)}
+			100%{ transform:rotate(0deg)}
+		}
+/*contact*/
+.contact{ width: 100%; height: 777px; background:linear-gradient(180deg,#272634 0%,#272533 50%,#292837 100%);}
+.contactIn{ background:url(img/contact-bg.png) no-repeat; width: 100%; height: 777px; margin: 0 auto;}
+.ciTop{width: 164px; height: 110px;margin: 0 auto;}
+.ciCen{ width: 471px; height: 471px; margin: 0px auto; background:url(img/board.png) no-repeat;}
+
+.ciCen .border{ width: 377px; height: 188px; margin: 0 auto; padding: 130px 0 0 0; box-sizing:border-box;}
+.border .bLeft{ width: 377px; height: 135px; overflow: hidden; padding: 25px 20px 0 20px;box-sizing:border-box;}
+.border .bLeft .blImg{ width: 98px; height: 98px; float: left;}
+.border .bLeft .bCenter{ width: 230px; height: 98px; float: right; color:#666;}
+.bCenter .bcTop{ width: 230px; height: 42px; line-height: 42px; font-size: 20px;}
+.bcTop span{ width: 150px; height: 42px; float: left;}
+.bcTop .btImg{ width: 68px; height: 26px; float: left; margin:8px 0 0 0;}
+.bCenter .location{ width: 12px; height: 15px; background:url(img/serivce-icon.png) no-repeat -91px -307px; padding: 0 0 0 20px;}
+.bCenter .message{ width: 16px; height: 8px;background:url(img/serivce-icon.png) no-repeat -89px -324px;padding: 0 0 0 20px;}
+.border .bRight{ width: 377px; height: 53px;}
+.border .bRight .bUl{ color: #666;}
+.bRight .bUl li{ float: left; width: 125px; height: 53px; line-height: 53px; text-align: center;}
+
+.ciCen .cc{ width: 471px; margin: 190px auto; text-align: center; line-height: 24px;}
+.ciFot{ background:url(img/contact-bg-1.png) no-repeat; width: 1000px; height: 198px; margin: 0 auto;}
+.cfUl{ height: 198px; width: 750px; margin: 0 auto;}
+.ciFot .cfUl li{ float: left; width: 250px; height: 115px; text-align: center;}
+.chat .chatImg,.weibo .wbImg,.qq .qqImg{ background:url(img/serivce-icon.png) no-repeat 0 0; width: 73px; height: 73px; display: block; margin: 20px auto; -moz-transition: all 0.3s;-ms-transition: all 0.3s;-o-transition: all 0.3s;-webkit-transition: all 0.3s;;}
+.weibo .wbImg{ background-position: 0 -146px;}
+.qq .qqImg{ background-position: 0 -292px;}
+	/*鼠标滑过效果*/
+	.chat .chatImg:hover{background-position: 0 -73px;}
+	.weibo .wbImg:hover{ background-position: 0 -219px;}
+	.qq .qqImg:hover{ background-position:0 -365px;}

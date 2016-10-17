@@ -1,0 +1,613 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>首页</title>
+<link href="css/lanrenzhijia.css" type="text/css" rel="stylesheet" />
+<link rel="stylesheet" href="css/animate.css" />
+<link rel="stylesheet" type="text/css" href="css/base.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="js/jquery-1.7.1.min.js"></script>
+<script src="js/jquery.flexslider-min.js"></script>
+
+<script>
+$(function(){
+	$('.flexslider').flexslider({
+		directionNav: true,
+		pauseOnAction: false
+	});
+});
+	window.onload = function(){
+		var oSer = document.getElementById('service_hm');
+		var aA = oSer.getElementsByTagName('a');
+		var oFwkh = document.getElementById('fwkh');
+		var aFwkhLi=oFwkh.getElementsByTagName('li');
+		var aDiv = oFwkh.children;
+		var iNow = 0;
+		var timer = null;
+		for(var i = 0; i < aA.length; i++){
+			aA[i].index = i;
+			aA[i].onclick = function(){
+				iNow = this.index;
+				tab();
+			}
+		}
+		function tab(){
+			for(var j = 0; j < aA.length; j++){
+				aA[j].className = '';
+				aDiv[j].style.display = 'none';
+			}
+			aA[iNow].className = 'on';
+			aDiv[iNow].style.display = 'block';
+		}
+		timer = setInterval(next,1000);
+		function next(){
+			iNow++;
+			if(iNow == aA.length){
+				iNow = 0;
+			}
+			tab();
+		}
+		oSer.onmouseover = function(){
+			clearInterval(timer);
+		}
+		oSer.onmouseout = function(){
+			timer = setInterval(next,1000);
+		}
+		;(function(){
+			var oWzjsBk=document.getElementById('wzjs_bk');
+			var aA=oWzjsBk.getElementsByTagName('a');
+			aA[0].onclick=function(){
+				oWzjsBk.children[0].style.display='block';
+				oWzjsBk.children[1].style.display='none';
+				this.style.background='#000';
+				aA[1].style.background='#fff';
+			};
+			aA[1].onclick=function(){
+				oWzjsBk.children[0].style.display='none';
+				oWzjsBk.children[1].style.display='block';
+				this.style.background='#000';
+				aA[0].style.background='#fff';
+			};
+		})();
+		//选项卡页面
+		;(function(){
+			var oTotal=document.getElementById('combo_total');
+			var oShhi=document.getElementById('combo_shhi');
+			var aA=oTotal.getElementsByTagName('a');
+			var aTerm=oShhi.children;
+			for(var i=0; i<aA.length;i++){
+				aA[i].index=i;
+				aA[i].onclick=function(){
+					for(var j=0;j<aA.length;j++){
+						aA[j].className='';
+						aTerm[j].style.display='none';
+					}
+					this.className='on';
+					aTerm[this.index].style.display='block';
+				};
+			}
+		})();
+	};
+</script>
+</head>
+<body>
+<div class="banner">
+	<div class="flexslider">
+		<ul class="slides">
+			<li style="background:url(img/1.jpg) 50% 0 no-repeat;"></li>
+			<li style="background:url(img/2.jpg) 50% 0 no-repeat;"></li>
+			<li style="background:url(img/3.jpg) 50% 0 no-repeat;"></li>
+			<li style="background:url(img/4.jpg) 50% 0 no-repeat;"></li>
+		</ul>
+	</div>
+	<div id="dingwei">
+		<div class="banner_head clearfix animated fadeInDown">
+			<a href="javascript:;" class="banner_head_logo fl"></a>
+			<ul class="fr">
+				<li><a href="index.html">首页</a><span class="nav_sp"></span></li>
+				<li><a href="网站建设.html">网站建设</a><span class="nav_sp"></span></li>
+				<li><a href="网络推广.html">网络推广</a><span class="nav_sp"></span></li>
+				<li><a href="营销托管.html">营销托管</a><span class="nav_sp"></span></li>
+				<li><a href="企业上云.html">企业上云</a><span class="nav_sp"></span></li>
+				<li><a href="服务客户.html">服务客户</a><span class="nav_sp"></span></li>
+				<li><a href="了解我们.html">了解我们</a><span class="nav_sp"></span></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!--网站-->
+<div class="kind">
+	<ul class="kinds">
+    	<li class="fl"><img src="img/e_03.png"><h2><a href="#">网站建设</a></h2><p>高端展示型、营销型、数据交互性、</p><p>政府机构性等网站建设服务。</p></li>
+        <li class="fl"><img src="img/b_05.png"></a><h2><a href="#">网络推广</a></h2><p>精准有效的网络推广形式,</p><p>有助于节约成本、提升网络推广效果。</p></li>
+        <li class="fl"><img src="img/t_07.png"></a><h2><a href="#">营销托管</a></h2><p>营销解决方案</p><p>为企业提高网络营销效果及网络时代竞争力。</p></li>
+        <li class="fl"><img src="img/m_09.png"></a><h2><a href="#">企业上云</a></h2><p>与阿里云、百度开放云合作,</p><p>为用户提供上云服务。</p></li>
+    </ul>
+</div>
+<!--网站建设套餐-->
+<div class="combo">
+	<div class="combo_total">
+    	<ul class="combo_total_top" id="combo_total">
+        	<li class="fl"><a href="javascript:;" class="on">网站建设</a></li>
+            <li class="fl"><a href="javascript:;">网络推广</a></li>
+            <li class="fl"><a href="javascript:;">营销托管</a></li>
+            <li class="fl"><a href="javascript:;">企业上云</a></li>
+        </ul>
+        <div id="combo_shhi">
+        	<!--网站建设-->
+            <div>
+            	<div class="mid clearfix">
+                <div class="left fl">
+                    <i>Website building</i>
+                    <h2>成熟的网站整体解决方案,</h2>
+                    <p>有利于SEO搜索引擎优化、营销推广、访客咨询量、客户转化率,充分发挥网站价值。</p>
+                    <p>10余年网络营销实战经验,专业网络营销团队,</p>
+                    <p>为用户提供专业化的需求调研、分析、策划、设计、开发,</p>
+                    <p>为用户量身定制彰显企业形象、注重用户体验、利于营销推广、</p>
+                    <p>有助咨询转化的高端展示型、营销型、数据交互性、政府机构性等网站建设服务。</p>
+                    <h3>网站建设套餐</h3>
+                    <div class="meal clearfix">
+                        <div class="Le fl"><img src="img/build_em_03.png"><span>PC网站+手机站</span></div>
+                        <div class="Le fl"><img src="img/build_em_03.png"><span>PC网站+手机站+网站优化</span></div>
+                    </div>
+                </div>
+                <div class="right fr" id="wzjs_bk">
+                    <div class="right_show">
+                        <div class="pic">
+                            <img src="img/com_03.png" class="fir">
+                            <i class="add">+</i>
+                            <img src="img/phone_03.png" class="sec">
+                            <i class="add">+</i>
+                            <img src="img/net_03.png" class="thr">
+                        </div>
+                        <i>PC版网站 + 手机网站 + 网站优化</i>
+                        <p>营销推广必选!支持不通设备访问,自动适应手机屏幕尺寸,</p>
+                        <p>增加受众覆盖范围,展示数据同步,顺畅的访问速度、清晰的展现形式,</p>
+                        <p>提升用户体验,全面提升企业形象;</p>
+                    </div>
+                    <div class="right_hidd">
+                        <div class="pic">
+                            <img src="img/com_03.png" class="fir">
+                            <i class="add">+</i>
+                            <img src="img/phone_03.png" class="sec">
+                            <i class="add">+</i>
+                            <img src="img/net_03.png" class="thr">
+                        </div>
+                        <i>PC版网站 + 手机网站 + 网站优化</i>
+                        <p>营销推广必选!支持不通设备访问,自动适应手机屏幕尺寸,</p>
+                        <p>增加受众覆盖范围,展示数据同步,顺畅的访问速度、清晰的展现形式,</p>
+                        <p>提升用户体验,全面提升企业形象;2222</p>
+                    </div>
+                    <a href="javascript:;" class="right_sh on"></a>
+                    <a href="javascript:;" class="right_hi"></a>
+                </div>
+            </div>
+                <ul class="intro">
+                    <li class="fl"><a href="javascript:;"><img src="img/net1_03.png"></a></li>
+                    <li class="fl"><a href="javascript:;"><img src="img/add1_03.png"></a></li>
+                    <li class="fl"><a href="javascript:;"><img src="img/phon_05.png"></a></li>
+                    <li class="fl"><a href="javascript:;"><img src="img/add_t_03.png"></a></li>
+                    <li class="fl"><a href="javascript:;"><img src="img/seo_net_03.png"></a></li>
+                </ul>
+            </div>
+            <!--网络推广-->
+            <div style="display:none">
+            	<div class="mid_two">
+                	<h2>精准有效的网络推广形式,有助于节省成本、提升网络推广效果</h2>
+                    <em></em>
+                    <div class="lfe">
+                    	<h3>网站优化</h3>
+                        <p>针对网站架构、关键词、内容、链接、CMS系统五大方面进行分析,实施结构优化+内容</p>
+                        <p>优化+关键词布局+页面优化+用户体验优化+站内链接策略+站外链接策略...</p>
+                        <h4>提高网站核心关键词、产品相关关键词在搜索引擎上的搜索排名。</h4>
+                        <p>使客户通过相关关键词搜索到网站, <span> 增加品牌展现量 </span> ,扩大品牌影响力。</p>
+                        <a href="javascript:;">在线咨询 +</a>
+                    </div>
+                    <div class="rth">
+                    	<h3>竞价托管</h3>
+                        <p>结合营销数据分析及企业时段性营销效果反馈,优化调整网站架构、页面布局、网站内容</p>
+                        <p>建设,策划制作推广着陆页面,科学合理、精细化竞价推广账户搭建,定期维护管理,有</p>
+                        <p>助于帮助企业<span>降低推广成本,提升推广效果,提高网站咨询量及</br>转化率。</span></p>
+                        <a href="javascript:;">在线咨询 +</a>
+                    </div>
+                </div>
+            </div>
+            <div style="display:none">
+            	<div class="mid_thr">
+                	<h2>
+                    	<p>专注互联网整合营销,</p>
+                        <p>全方位营销解决方案,为企业提高网络营销效果及网络时代竞争力。</p>
+                    </h2>
+                    <ul class="clearfix">
+                    	<li class="fl">帮助企业策划单价营销型网站,结合竞价推广制作推广着陆页面,不熟核心关键词,优化重点关键词同时扩展优化相关地域、疑问、长尾关键词,梳理调整竞价推广账户,提高推广覆盖范围、降低推广成本、提高推广效果。</li>
+                        <li class="fl"><span>易拓网络提供营销方案策划,</span>帮助企业分析开展精准有效的网络营销形式,<span>计划实施由用户决定,</span>并帮助企业实施营销计划,科学合理的节省营销投入成本,并且结合营销数据分析及时段性客户反馈效果优化调整营销策略,提高网络咨询及客户转化。</li>
+                        <li class="fl sppc"><span>易拓网络全面负责企业网络营销策划、实施、咨询、销售,</span>帮助企业解决没有人才优势,网络营销能里不足,实施成本高,难以取得理想的网络营销效果等难题,为企业打造互联网形象、塑造企业口碑,实施营销推广,并代理企业咨询销售。按效果收费!</li>
+                    </ul>
+                    <h3 class="clearfix">
+                    	<p class="fl">网站+SEO+SEM &nbsp;<a href="javascript:;">+立即咨询</a></p>
+                        <p class="fl">网络营销托管 &nbsp;<a href="javascript:;">+开展营销托管</a></p>
+                        <p class="fl">营销外包 &nbsp;<a href="javascript:;">+实施营销外包</a></p>
+                    </h3>
+                </div>            
+            </div>
+            <div style="display:none">
+            	<div class="mid_for">
+                	<div class="mid_for_top">
+                    	<p>阿里云/百度云</p>
+                        <h3>+</h3>
+                        <h4>易拓网络</h4>
+                        <p>技术支持 服务保障</p>
+                    </div>
+                    <div class="mid_for_left">
+                    	<p>域名注册、云虚拟主机、云服务器ECS、云数据库RDS、对象存储OSS、阿里云办公应用、</p>
+                        <p>阿里云邮箱等阿里云产品咨询、购买服务,以及阿里云备案、阿里云服务器环境配置、</p>
+                        <p>阿里云服务器数据迁移等技术服务。</p>
+                    </div>
+                    <div class="mid_for_right">
+                    	<p>域名注册、云虚拟主机、云服务器ECS、云数据库RDS、</p>
+                        <p>对象存储OSS、阿里云办公应用、阿里云邮箱等阿里云产品咨询、购买服务,以及阿里云备案、</p>
+                        <p>阿里云服务器环境配置、阿里云服务器数据迁移等技术服务。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--服务客户-->
+<div class="service">
+	<div class="service_hm" id="service_hm">
+    	<h2 class="head">
+        	<span>Customer service</span>
+            <p>服务客户</p>
+            <i></i>
+        </h2>
+        <div class="fwkh" id="fwkh">
+        	<div class="div1" style="display: block;">
+        		<ul class="service_hm_zs clearfix">
+		        	<li class="fl">
+		        		<div class="service_hm_zs_dv">
+		        			<img src="img/hmzs_1.png">
+		        			<span>PC网站建设+手机网站制作+微网站建设</span>
+		        		</div>
+		        		<p>宏美装饰</p>
+		        	</li>
+		            <li class="fl">
+		            	<div class="service_hm_zs_dv">
+		        			<img src="img/hmzs_2.png">
+		        			<span>PC网站建设+手机网站制作+微网站建设</span>
+		        		</div>
+		        		<p>宏美装饰</p></li>
+		            <li class="fl spc">
+		            	<div class="service_hm_zs_dv">
+		        			<img src="img/hmzs_3.png">
+		        			<span>PC网站建设+手机网站制作+微网站建设</span>
+		        		</div>
+		        		<p>宏美装饰</p>
+		            </li>
+		        </ul>
+		        <ul class="service_hm_zs clearfix">
+		        	<li class="fl">
+		        		<div class="service_hm_zs_dv">
+		        			<img src="img/hmzs_4.png">
+		        			<span>PC网站建设+手机网站制作+微网站建设</span>
+		        		</div>
+		        		<p>宏美装饰</p>
+		        	</li>
+		            <li class="fl">
+		            	<div class="service_hm_zs_dv">
+		        			<img src="img/hmzs_5.png">
+		        			<span>PC网站建设+手机网站制作+微网站建设</span>
+		        		</div>
+		        		<p>宏美装饰</p></li>
+		            <li class="fl spc">
+		            	<div class="service_hm_zs_dv">
+		        			<img src="img/hmzs_6.png">
+		        			<span>PC网站建设+手机网站制作+微网站建设</span>
+		        		</div>
+		        		<p>宏美装饰</p>
+		            </li>
+		        </ul>
+		        <ul class="service_hm_zs clearfix">
+		        	<li class="fl">
+		        		<div class="service_hm_zs_dv">
+		        			<img src="img/hmzs_7.png">
+		        			<span>PC网站建设+手机网站制作+微网站建设</span>
+		        		</div>
+		        		<p>宏美装饰</p>
+		        	</li>
+		            <li class="fl">
+		            	<div class="service_hm_zs_dv">
+		        			<img src="img/hmzs_8.png">
+		        			<span>PC网站建设+手机网站制作+微网站建设</span>
+		        		</div>
+		        		<p>宏美装饰</p></li>
+		            <li class="fl spc">
+		            	<div class="service_hm_zs_dv">
+		        			<img src="img/hmzs_9.png">
+		        			<span>PC网站建设+手机网站制作+微网站建设</span>
+		        		</div>
+		        		<p>宏美装饰</p>
+		            </li>
+		        </ul>
+        	</div>
+        	<div class="div2">
+        		<ul class="service_hm_zs clearfix">
+		        	<li class="fl">
+		        		<div class="service_hm_zs_dv">
+		        			<img src="img/hmzs_1.png">
+		        			<span>PC网站建设+手机网站制作+微网站建设</span>
+		        		</div>
+		        		<p>1111</p>
+		        	</li>
+		            <li class="fl">
+		            	<div class="service_hm_zs_dv">
+		        			<img src="img/hmzs_2.png">
+		        			<span>PC网站建设+手机网站制作+微网站建设</span>
+		        		</div>
+		        		<p>宏美装饰</p></li>
+		            <li class="fl spc">
+		            	<div class="service_hm_zs_dv">
+		        			<img src="img/hmzs_3.png">
+		        			<span>PC网站建设+手机网站制作+微网站建设</span>
+		        		</div>
+		        		<p>宏美装饰</p>
+		            </li>
+		        </ul>
+		        <ul class="service_hm_zs clearfix">
+		        	<li class="fl">
+		        		<div class="service_hm_zs_dv">
+		        			<img src="img/hmzs_4.png">
+		        			<span>PC网站建设+手机网站制作+微网站建设</span>
+		        		</div>
+		        		<p>宏美装饰</p>
+		        	</li>
+		            <li class="fl">
+		            	<div class="service_hm_zs_dv">
+		        			<img src="img/hmzs_5.png">
+		        			<span>PC网站建设+手机网站制作+微网站建设</span>
+		        		</div>
+		        		<p>宏美装饰</p></li>
+		            <li class="fl spc">
+		            	<div class="service_hm_zs_dv">
+		        			<img src="img/hmzs_6.png">
+		        			<span>PC网站建设+手机网站制作+微网站建设</span>
+		        		</div>
+		        		<p>宏美装饰</p>
+		            </li>
+		        </ul>
+		        <ul class="service_hm_zs clearfix">
+		        	<li class="fl">
+		        		<div class="service_hm_zs_dv">
+		        			<img src="img/hmzs_7.png">
+		        			<span>PC网站建设+手机网站制作+微网站建设</span>
+		        		</div>
+		        		<p>宏美装饰</p>
+		        	</li>
+		            <li class="fl">
+		            	<div class="service_hm_zs_dv">
+		        			<img src="img/hmzs_8.png">
+		        			<span>PC网站建设+手机网站制作+微网站建设</span>
+		        		</div>
+		        		<p>宏美装饰</p></li>
+		            <li class="fl spc">
+		            	<div class="service_hm_zs_dv">
+		        			<img src="img/hmzs_9.png">
+		        			<span>PC网站建设+手机网站制作+微网站建设</span>
+		        		</div>
+		        		<p>宏美装饰</p>
+		            </li>
+		        </ul>
+        	</div>
+        	<div class="div3">
+        		<ul class="service_hm_zs clearfix">
+		        	<li class="fl">
+		        		<div class="service_hm_zs_dv">
+		        			<img src="img/hmzs_1.png">
+		        			<span>PC网站建设+手机网站制作+微网站建设</span>
+		        		</div>
+		        		<p>2222</p>
+		        	</li>
+		            <li class="fl">
+		            	<div class="service_hm_zs_dv">
+		        			<img src="img/hmzs_2.png">
+		        			<span>PC网站建设+手机网站制作+微网站建设</span>
+		        		</div>
+		        		<p>宏美装饰</p></li>
+		            <li class="fl spc">
+		            	<div class="service_hm_zs_dv">
+		        			<img src="img/hmzs_3.png">
+		        			<span>PC网站建设+手机网站制作+微网站建设</span>
+		        		</div>
+		        		<p>宏美装饰</p>
+		            </li>
+		        </ul>
+		        <ul class="service_hm_zs clearfix">
+		        	<li class="fl">
+		        		<div class="service_hm_zs_dv">
+		        			<img src="img/hmzs_4.png">
+		        			<span>PC网站建设+手机网站制作+微网站建设</span>
+		        		</div>
+		        		<p>宏美装饰</p>
+		        	</li>
+		            <li class="fl">
+		            	<div class="service_hm_zs_dv">
+		        			<img src="img/hmzs_5.png">
+		        			<span>PC网站建设+手机网站制作+微网站建设</span>
+		        		</div>
+		        		<p>宏美装饰</p></li>
+		            <li class="fl spc">
+		            	<div class="service_hm_zs_dv">
+		        			<img src="img/hmzs_6.png">
+		        			<span>PC网站建设+手机网站制作+微网站建设</span>
+		        		</div>
+		        		<p>宏美装饰</p>
+		            </li>
+		        </ul>
+		        <ul class="service_hm_zs clearfix">
+		        	<li class="fl">
+		        		<div class="service_hm_zs_dv">
+		        			<img src="img/hmzs_7.png">
+		        			<span>PC网站建设+手机网站制作+微网站建设</span>
+		        		</div>
+		        		<p>宏美装饰</p>
+		        	</li>
+		            <li class="fl">
+		            	<div class="service_hm_zs_dv">
+		        			<img src="img/hmzs_8.png">
+		        			<span>PC网站建设+手机网站制作+微网站建设</span>
+		        		</div>
+		        		<p>宏美装饰</p></li>
+		            <li class="fl spc">
+		            	<div class="service_hm_zs_dv">
+		        			<img src="img/hmzs_9.png">
+		        			<span>PC网站建设+手机网站制作+微网站建设</span>
+		        		</div>
+		        		<p>宏美装饰</p>
+		            </li>
+		        </ul>
+        	</div>
+        </div>
+        <div class="car">
+        	<a href="javascript:;" class="on"></a>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+        </div>
+    </div>
+</div>
+<!--关于我们-->
+<div class="referral">
+	<div class="referral_intro clearfix">
+    	<div class="intro_left fl">
+        	<h2>济南易拓网络技术有限公司</h2>
+            <p>是由拥有多年网络营销实践经验的技术团队组成,专注于网络整合营销策划、网络营销托管、营销型网站建设、网站优化推广、微</p>
+            <p>信营销运营、网络媒体广告等网络营销服务;</p>
+            <p class="bes">本着务实、开拓、创新的企业文化,秉承高效率、优品质、重效果的服务理念,致力于为中小型企业提供更有效的网络营销服务,</p>
+            <p>利用互联网扩大企业品牌影响力,提升企业品牌价值!</p>
+        </div>
+        <div class="intro_right fr">
+        	<h2>
+            	<span>About us</span>
+                <p>服务客户</p>
+                <i></i>
+            </h2>
+            <div class="addr">
+            	<p>
+                	<i>全国服务热线:</i>
+                	<span>400-007-9607</span>
+                </p>
+                <p>
+                	<i>公司固话:</i>
+                	<span>0531-68809607</span>
+                </p>
+                <p>
+                	<i>公司地址:</i>
+                	<span class="address">济南市天桥区济洛路130号</span>
+                </p>
+                <a href="javascript:;">< 在线咨询 ></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--公司动态-->
+<div class="character">
+	<div class="character_tex clearfix">
+    	<div class="company fl">
+        	<h2>公司动态</h2>
+            <i>2016/08/08</i>
+            <p><span>百度</span>严格限制商业推广数量 所有页面均低于30%</p>
+            <em>5月24日下午,百度推广通过官方微博宣布:经过一周多紧张的算法调整和方案测试后,自2016年5月23日起,百度搜索结果将全面实现每页面商业推广信息...</em>
+            <ul class="mess">
+            	<li class="clearfix"><p class="fl">-&nbsp;&nbsp;乐陵网络推广|乐陵网络营销公司-易拓网络营销公司</p><span class="fr">2016/08/08</span></li>
+                <li class="clearfix"><p class="fl">-&nbsp;&nbsp;济南有哪些网络优化公司?-济南网站优化</p><span class="fr">2016/08/08</span></li>
+                <li class="clearfix"><p class="fl">-&nbsp;&nbsp;齐河网络公司-齐河网络营销公司选易拓网络,...</p><span class="fr">2016/08/08</span></li>
+                <li class="clearfix"><p class="fl">-&nbsp;&nbsp;百度严格限制商业推广数量 所有页面均低于</p><span class="fr">2016/08/08</span></li>
+                <li class="clearfix"><p class="fl">-&nbsp;&nbsp;乐陵网络推广|乐陵网络营销公司-易拓网络营销公司</p><span class="fr">2016/08/08</span></li>
+                <li class="clearfix"><p class="fl">-&nbsp;&nbsp;济南有哪些网络优化公司?-济南网站优化</p><span class="fr">2016/08/08</span></li>
+                <li class="clearfix"><p class="fl">-&nbsp;&nbsp;齐河网络公司-齐河网络营销公司选易拓网络,...</p><span class="fr">2016/08/08</span></li>
+                <li class="clearfix"><p class="fl">-&nbsp;&nbsp;百度严格限制商业推广数量 所有页面均低于</p><span class="fr">2016/08/08</span></li>
+            </ul>
+        </div>
+        <div class="ques fl">
+        	<h2>推广问答</h2>
+            <i>2016/08/08</i>
+            <p><span>百度</span>严格限制商业推广数量 所有页面...</p>
+            <em>5月24日下午,百度推广通过官方微博宣布:经过一周多紧张的算法调整和方案测试后,自2016年5月23日起,百度搜索结果将全面实现每页面商业推广信息...</em>
+            <ul class="mess">
+            	<li><p>-&nbsp;&nbsp;乐陵网络推广|乐陵网络营销公司-易拓网络营销公司</p></li>
+                <li><p>-&nbsp;&nbsp;济南有哪些网络优化公司?-济南网站优化</p></li>
+                <li><p>-&nbsp;&nbsp;齐河网络公司-齐河网络营销公司选易拓网络,...</p></li>
+                <li><p>-&nbsp;&nbsp;百度严格限制商业推广数量 所有页面均低于</p></li>
+            <ul>
+            <img class="pt" src="img/conm_tg_03.png">
+        </div>
+        <div class="ques fl">
+        	<h2>营销知识</h2>
+            <i>2016/08/08</i>
+            <p><span>百度</span>严格限制商业推广数量 所有页面...</p>
+            <em>5月24日下午,百度推广通过官方微博宣布:经过一周多紧张的算法调整和方案测试后,自2016年5月23日起,百度搜索结果将全面实现每页面商业推广信息...</em>
+            <ul class="mess">
+            	<li><p>-&nbsp;&nbsp;乐陵网络推广|乐陵网络营销公司-易拓网络营销公司</p></li>
+                <li><p>-&nbsp;&nbsp;济南有哪些网络优化公司?-济南网站优化</p></li>
+                <li><p>-&nbsp;&nbsp;齐河网络公司-齐河网络营销公司选易拓网络,...</p></li>
+                <li><p>-&nbsp;&nbsp;百度严格限制商业推广数量 所有页面均低于</p></li>
+            <ul>
+            <img class="pt" src="img/conm_th_03.png">
+        </div>
+    </div>
+</div>
+<!--底部-->
+<footer>
+    <div class="ft_x"></div>
+    <div class="ft_bd">
+        <div class="ft_bd_tp">
+            <ul>
+                <li>
+                    <img src="img/weixin.png">
+                    <p>在线客服</p>
+                    <span>服务时段：8：30 - 17:30</span>
+                </li>
+                <li>
+                    <img src="img/dianhua.png">
+                    <p>400-007-9607</p>
+                    <span>7*24小时客服电话</span>
+                </li>
+                <li class="ft_bd_tp_bd">
+                    <img src="img/dianhua.png">
+                    <p>0531-6885 9607</p>
+                    <span>座机服务号</span>
+                </li>
+            </ul>
+        </div>
+        <div class="ft_list">
+            <p>我们的服务</p>
+            <ul class="ft_list_lf">
+                <li><a href="#">营销咨询顾问</a> </li>
+                <li><a href="#">网络媒体顾问</a> </li>
+                <li><a href="#">网站优化</a> </li>
+                <li><a href="#">竞价推广</a> </li>
+                <li><a href="#">网络推广</a> </li>
+            </ul>
+            <ul class="ft_list_md">
+                <li><a href="#">网站建设</a> </li>
+                <li><a href="#">网络推广</a> </li>
+                <li><a href="#">营销托管</a> </li>
+                <li><a href="#">企业上云</a> </li>
+            </ul>
+            <ul class="ft_list_rt">
+                <li><a href="#">服务客户</a> </li>
+                <li><a href="#">了解我们</a> </li>
+                <li><a href="#">加入我们</a> </li>
+            </ul>
+            <img src="img/in_tp1.jpg">
+        </div>
+        <div class="ft_md"><p>友情链接：<a href="#">渭南网站建设</a>|<a href="#">西安网站建设</a>|<a href="#">成都网站建设</a>|<a href="#">西安网站制作</a>|<a href="#">常州网站建设</a>|<a href="#">佛山做网站</a>|<a href="#">菏泽网站建设</a>|<a href="#">深圳网站建设公司</a>|<a href="#">google海外推广</a>|<a href="#">济南网络推广公司</a>|<a href="#">济南网络优化</a>|</p></div>
+        <div class="ft_bm">
+            <p>济南易拓网络技术有限公司 公司地址：天桥区东工商河路17号 版权所有</p>
+            <p>鲁ICP备13019725号-1  站长统计</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

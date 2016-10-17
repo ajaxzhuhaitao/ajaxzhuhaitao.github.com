@@ -1,0 +1,275 @@
+<!--页面顶部-->
+<header id="top"><!--宽100%-->
+  <!--顶部的主要内容--><!--width 1211px-->
+  <div id="top_box">
+    <!--五角星：left-->
+    <img src="img/star.jpg"/>
+    <a href="#" class="lf">收藏燕姿</a>
+    <ul class="rt">
+      <li>你好，欢迎来到燕姿！
+        <a href="register.html">[登录]</a>
+        <a href="login.html">[免费注册]</a>
+      </li>
+      <li>
+        <b></b>
+        <a href="#">我的订单</a>
+      </li>
+      <li class="vip">
+        <b></b>
+        <a href="#">会员俱乐部</a>
+      </li>
+      <li class="qiyepindao">
+        <b></b>
+        <a href="#">企业频道</a>
+      </li>
+      <li class="shouji">
+        <b></b>
+        <a href="#">手机燕姿</a>
+      </li>
+      <li class="service">
+        <b></b>
+        <a href="#">客户服务</a>
+        <!--客户服务弹出菜单-->
+        <ul id="service_items">
+          <li>
+            <a href="#">帮助中心</a>
+          </li>
+          <li>
+            <a href="#">售后服务</a>
+          </li>
+          <li>
+            <a href="#">在线客服</a>
+          </li>
+          <li>
+            <a href="#">投诉中心</a>
+          </li>
+          <li>
+            <a href="#">客服邮箱</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <b></b>
+        <a href="#">网站导航</a>
+      </li>
+    </ul>
+  </div>
+</header>
+<!--logo和搜索框  top_main的主要实现-->
+<!--1\jd logo 3、我的燕姿 5\增加空子元素，撑起父元素高度-->
+<div id="top_main">
+  <a href="#" class="lf">
+    <img src="img/yz_logo.jpg"/>
+  </a>
+  <!--搜索框-->
+  <div id="search_box" class="lf">
+    <div class="search">
+      <input class="text" id="kw"/>
+      <input type="button" class="button" value="搜索"/>
+    </div>
+    <div id="suggest">
+      <ul>
+        <!--<li>jsp</li>
+        <li>java</li>
+        <li>js</li>
+        <li>javascript</li>
+        <li>jms</li>-->
+      </ul>
+    </div>
+    <!-- 2\搜索框和热门搜索 -->
+    <div class="hot_words">
+      <span class="">热门搜索:</span>
+      <a href="skirt.html">连衣裙</a>
+      <a href="skirt.html">雪纺裙</a>
+      <a href="skirt.html">长裙</a>
+      <a href="skirt.html">短裙</a>
+      <a href="skirt.html">波西米亚长裙</a>
+    </div>
+  </div>
+  <!--我的京东-->
+  <div id="my_jd" class="lf">我的燕姿
+    <b></b>
+  </div>
+  <!--&lt;!&ndash;4、去购物车结算&ndash;&gt;-->
+  <!--<div id="my_car" class="lf">去购物车结算-->
+    <!--<b></b>-->
+  <!--</div>-->
+  <!--撑起父元素高度-->
+  <div class="clear"></div>
+</div>
+<!--导航-->
+<nav id="nav">
+  <ul id="nav_items">
+    <li>
+      <a href="yz_home.html">首页</a>
+      <span></span>
+    </li>
+    <li>
+      <a href="newProduct.html">新品到店</a>
+      <div id='new'>
+        <div>
+          <span></span>
+          
+          <h2>NEW ARRIVALS 新品</h2>
+          <img src="img/nav3.jpg" alt="" class="rt"/>
+          <hr>
+          <p>7月3日到店</p>
+          <p>7月10日到店</p>
+          <p>7月20日到店</p>
+          <p>7月20日到店</p>
+          <p>7月20日到店</p>
+        </div>
+      </div>
+    </li>
+    <li>
+      <a href="detail.html">产品详情</a>
+      <div id='search'><span></span>
+        <h2>产品细节</h2>
+        <img src="img/nav6.jpg" alt=""/>
+        <hr>
+        <p>最新推荐</p>
+        <p>特惠专区</p>
+        <p>新品橱窗</p>
+        <p>精选推荐</p>
+        <p>限量系列</p>
+      </div>
+    </li>
+    <li>
+      <a href="skirt.html">连衣裙专辑</a>
+      <div id='skirt'><span></span>
+        <img src="img/nav1.jpg" alt="" class="rt"/>
+        <h2>连衣裙专辑</h2>
+        <hr>
+        <p>本周更新自然大地色</p>
+        <p>私麻棉</p>
+        <p>清雅绿意</p>
+        <p>查看往期</p>
+        <p>纯真台北|地图裙</p>
+      </div>
+    </li>
+    <li>
+      <a href="fashion.html">时尚特辑</a>
+      <div id='fashion'><span></span>
+        <h2>时尚特辑</h2>
+        <hr>
+        <p>潮流风尚 6月特辑</p>
+        <p>潮流风尚 5月特辑</p>
+        <p>达人街拍 5月特辑</p>
+        <p>一衣多搭 4月特辑</p>
+        <p>纯净芬兰 6月特辑</p>
+      </div>
+    </li>
+    <li>
+      <a href="culture.html">品牌动态</a>
+      <div id='brand'><span></span>
+        <img src="img/nav2.jpg" alt="" class="rt"/>
+        <h2>BRAND CULTURE</h2>
+        <hr>
+        <p>关于歌莉娅</p>
+        <p>环球之旅</p>
+        <p>清雅绿意</p>
+        <p>GOELIA225</p>
+      </div>
+    </li>
+    <li>
+      <a href="login.html">会员注册</a>
+      <div id='all'>
+        <span></span>
+        <h2>VIP DETAILS</h2>
+        <hr>
+        <p>会员折扣</p>
+        <p>会员信息</p>
+        <p>会员商品</p>
+      </div>
+    </li>
+    <li>
+      <a href="register.html">会员登录</a>
+      <div id='very'><span></span>
+        <h2>VIP REGISTER</h2>
+        <hr>
+        <p>会员专享</p>
+        <p>帮助中心</p>
+        <p>订阅咨询</p></div>
+    </li>
+    <li>
+      <a href="shopList.html">店铺列表</a>
+      <div id='shop' style="display: none"><span></span>
+      </div>
+    </li>
+  </ul>
+</nav>
+<!--右侧固定部分-->
+<div id=fix>
+  <a href="#"><img src="img/p.png" alt="" class='m1'></a>
+  <a href="#"><img src="img/dh1.png" alt="" class='m2'></a>
+  <a href="#"><img src="img/c1.png" alt="" class="m3"></a>
+  <a href="#"><img src="img/t1.png" alt=""></a>
+</div>
+<script>
+  /*导航条弹出菜单实现*/
+  $('#nav_items')[0].addEventListener('mouseover',function(e){
+    var t=e.target;
+    if(t.nodeName=='A'&&t!=$('#shop').prev()[0]){
+      $(t).next()[0].style.display='block';
+    }
+  })
+  $('#nav ul li').mouseout(function(e){
+    if($(this).children()[1]){
+      $(this).children()[1].style.display='none';
+    }
+  })
+  $('#nav_items div').mouseover(function(){
+    $(this)[0].style.display='block';
+  })
+  /*搜索建议*/
+  var ul = document.querySelector('#suggest ul');
+  //输入框发生键盘弹起事件时，发起异步的请求
+  $('#kw')[0].onkeyup = function(){
+    var kw = this.value;  //用户在输入框中输入的内容
+    if(!kw){
+      ul.innerHTML  = '';
+      return;
+    }
+    //1
+    var xhr = new XMLHttpRequest();
+    //2
+    xhr.onreadystatechange = function(){
+      if(xhr.readyState===4){
+        if(xhr.status===200){
+          doResponse(xhr.responseText);
+        }else {
+          alert('响应完成但失败');
+        }
+      }
+    }
+    //3
+    xhr.open('GET','php/search.php?kw='+kw, true);
+    //4
+    xhr.send( null );
+  };
+  function doResponse(txt){
+    ul.innerHTML = txt;
+    $('#suggest ul').on('click',$('#suggest ul li'),function(event){
+      var target=event.target;
+      var html=target.innerHTML;
+      $('.text')[0].value=html;
+      //$('.text').blur(function(){
+        $('#suggest ul').html('');
+      //})
+      //$('.text').blur();
+      //$('.text').unbind();
+    })
+  }
+  $('#my_jd').click(function(){
+    window.open('register.html');
+  })
+  $('.search .button').click(function(){
+    window.open('newProduct.html','_blank');
+  })
+  $('#fix .m2').click(function(){
+    confirm('您好，本店的客服电话是：0371-88212356，是否确认拨打?')
+  })
+  $('#fix .m3').click(function(){
+    alert('购物车正在创建中....,感谢您对燕姿的支持，请到店铺试穿购买');
+  })
+</script>

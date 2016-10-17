@@ -1,0 +1,15 @@
+*,body,h1,h2,h3,h4,h5,h6,p,li{margin:0;padding:0;}
+ul,dl,ol,dt,dd{margin:0;padding:0;}
+li{list-style:none;}
+a{color:#000;text-decoration:none;}
+a img{margin:0;padding:0;border:0;}
+h1,h2,h3,h4,h5,h6{font-weight:normal;}
+b,strong{font-weight:normal;}
+i,em{font-style:normal;}
+img{vertical-align:top;}
+.clearfix:after{display:block;content:'';clear:both;}
+.clearfix{zoom:1;}
+.fl{float: left;}
+.fr{float: right;}
+body{width: 100%;}
+.w{width:987px; margin:0 auto;}

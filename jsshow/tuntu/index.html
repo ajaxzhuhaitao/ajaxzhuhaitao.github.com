@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        body{
+            background:palegreen;
+        }
+        #ul1{
+            width: 366px;
+            margin: 50px auto;
+        }
+        #ul1 li{
+            width: 100px;
+            height: 100px;
+            float: left;
+            margin: 10px;
+            border: 1px solid #000;
+        }
+        #ul1 li img{
+            width: 100px;
+            height: 100px;
+        }
+        #btn1{
+            position: absolute;
+            left: 50px;
+            top: 50px;
+        }
+    </style>
+    <script src="move.js"></script>
+    <script>
+        window.onload = function () {
+            var oBtn=document.getElementById('btn1');
+            var oUl=document.getElementById('ul1');
+            var aLi=oUl.children;
+
+            // 布局转化
+            var aPos=[];
+            for(var i=0; i<aLi.length; i++){
+                aPos[i]={
+                    left: aLi[i].offsetLeft,
+                    top: aLi[i].offsetTop
+                };
+            }
+            for(var i=0; i<aLi.length; i++){
+                aLi[i].style.position='absolute';
+                aLi[i].style.left=aPos[i].left+'px';
+                aLi[i].style.top=aPos[i].top+'px';
+                aLi[i].style.margin=0;
+            }
+            var timer;
+            var bFlag=false;
+            oBtn.onclick=function(){
+                if(bFlag)return;
+                bFlag=true;
+                var iNow=0;
+                timer=setInterval(function(){
+                    (function(index){
+                        move(aLi[iNow], {left: 50, top: 50, width: 0, height: 0, opacity: 0},{complete: function(){
+                            if(index==aLi.length-1){
+                                iNow=index;
+                                timer=setInterval(function(){
+                                    move(aLi[iNow], {left: aPos[iNow].left, top: aPos[iNow].top, width: 100, height: 100, opacity: 1});
+                                    iNow--;
+
+                                    // 关闭定时器
+                                    if(iNow==-1){
+                                        clearInterval(timer);
+                                        setTimeout(function(){
+                                            bFlag=false;
+                                        }, 500);
+                                    }
+                                }, 100);
+                            }
+                        }});
+                    })(iNow);
+                    iNow++;
+                    // 关闭定时器
+                    if(iNow==aLi.length){
+                        clearInterval(timer);
+                    }
+                }, 100);
+
+            };
+        };
+    </script>
+</head>
+<body>
+    <input type="button" value="智能吞吐" id="btn1">
+    <ul id="ul1">
+        <li><a href="javascript:;"> <img src="img/11.jpg"></a></li>
+        <li><a href="javascript:;"> <img src="img/12.jpg"></a></li>
+        <li><a href="javascript:;"> <img src="img/13.jpg"></a></li>
+        <li><a href="javascript:;"> <img src="img/14.jpg"></a></li>
+        <li><a href="javascript:;"> <img src="img/15.jpg"></a></li>
+        <li><a href="javascript:;"> <img src="img/16.jpg"></a></li>
+        <li><a href="javascript:;"> <img src="img/17.jpg"></a></li>
+        <li><a href="javascript:;"> <img src="img/18.jpg"></a></li>
+        <li><a href="javascript:;"> <img src="img/19.jpg"></a></li>
+    </ul>
+</body>
+</html>

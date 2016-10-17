@@ -1,0 +1,360 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link rel="stylesheet" href="css/animate.css" />
+<link rel="stylesheet" type="text/css" href="css/base.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script>
+window.onload=function(){
+	var oMorByt=document.getElementById('mor_byt');
+	var oLalEwm=document.getElementById('zs_lal_ewm');
+	var oPrev=document.getElementById('prev');
+	var oNext=document.getElementById('next');
+	//网站建设案例
+	oMorByt.innerHTML+=oMorByt.innerHTML;
+	var W=oMorByt.offsetWidth/2;
+	clearInterval(oMorByt.timer);
+	function MorTab(){
+		oMorByt.timer=setInterval(function(){
+			oMorByt.style.left=oMorByt.offsetLeft+3+'px';
+			if(oMorByt.offsetLeft>0){
+				oMorByt.style.left=-W+'px';
+			}
+		},30);
+	};
+	MorTab();
+	oMorByt.onmouseover=function(){
+		clearInterval(oMorByt.timer);
+	};
+	oMorByt.onmouseout=function(){
+		MorTab();
+	};
+	;(function(){
+		//手机案例展示
+		oLalEwm.innerHTML+=oLalEwm.innerHTML;
+		var aLi=oLalEwm.getElementsByTagName('li');
+		oLalEwm.style.width=aLi[0].offsetWidth*aLi.length;
+		var W=oLalEwm.offsetWidth/2;
+		oPrev.onclick=function(){
+			oLalEwm.style.left=oLalEwm.offsetLeft-aLi[0].offsetWidth+'px';
+			if(oLalEwm.offsetLeft<-W){
+				oLalEwm.style.left=0+'px';
+			}
+		};
+		oNext.onclick=function(){
+			oLalEwm.style.left=oLalEwm.offsetLeft+aLi[0].offsetWidth+'px';
+			if(oLalEwm.offsetLeft>0){
+				oLalEwm.style.left=-W+'px';
+			}
+		};	
+	})();	
+};
+</script>
+</head>
+
+<body>
+<div class="jans_banner">
+	<img src="img/wzjs_bann_01.png">
+	<div class="banner_head clearfix  animated fadeInDown">
+    	<a href="javascript:;" class="banner_head_logo fl"></a>
+        <ul class="fr">
+        	<li><a href="index.html">首页</a><span class="nav_sp"></span></li>
+            <li><a href="网站建设.html">网站建设</a><span class="nav_sp"></span></li>
+            <li><a href="网络推广.html">网络推广</a><span class="nav_sp"></span></li>
+            <li><a href="营销托管.html">营销托管</a><span class="nav_sp"></span></li>
+            <li><a href="企业上云.html">企业上云</a><span class="nav_sp"></span></li>
+            <li><a href="服务客户.html">服务客户</a><span class="nav_sp"></span></li>
+            <li><a href="了解我们.html">了解我们</a><span class="nav_sp"></span></li>
+        </ul>
+    </div>
+</div>
+<div class="jans">
+	<div class="jans_plmu">
+    	<div class="yxxg">
+        	<h2>简单做个便宜模板网站,网络营销会有效果?</h2>
+            <p>互联网的快速发展,企业都开始重视网络营销,</p>
+            <p><span>网站配色不协调、架构布局混乱、信息展示过于简单</span>,与同行业相比,</p>
+            <p><span>网站不能更好体现公司形象、展示产品、服务</span>,那么就会造成网站跳出率高、客户咨询量少。</p>
+        	<p><span>不利于搜索引擎优化</span>,网站做好后很久都不能通过搜索引擎搜到,</p>
+            <p>或是仅能通过公司名称搜到网站,<span>做竞价推广转化成本高,咨询量极少。</span></p>
+        </div>
+    </div>
+</div>
+<div class="zs">
+	<div class="zs_lsd">
+    	<div class="ttx">
+        	<h2>易拓网络<span>为您量身打造</span>彰显品牌形象、</h2>
+            <p>充分展示企业产品特色的营销型、功能数据型、政府机构型专属网站。</p>
+            <p>专业从事网络营销,拥有多年营销推广实战经验;</p>
+            <p>制作前进行行业调研、竞争对手分析,提炼企业特色及产品特点;</p>
+            <p>策划注重用户体验、营销推广、SEO优化;</p>
+            <p>设计彰显企业形象、突出产品亮点,适合企业互联网形象;</p>
+            <p>多种开发语言,信息展示、数据交互、电子商务、电子政务等网站程序,满足不同功能需求。</p>
+            <p>专业网络营销策划,成熟的网站整体解决方案,发挥网站价值,有效提升以网站为收口网络营销效果。</p>
+        </div>
+    </div>
+    <div class="zs_lph">
+    	<div class="ttx">
+        	<h2>为什么有PC版还<span>要做手机网站站呢?</span></h2>
+            <p>用户体验:电脑版在手机上打开时,字体小、图片小不清晰、加载速度慢;</p>
+            <p>跳出率:图片打、网页大,网站加载速度慢,打开时间长;造成潜在客户流失;</p>
+            <h3>手机网站优势</h3>
+            <p>同域名访问:自动识别访问设备,手机访问自动切换为手机网站;</p>
+            <p>显示界面:采用最新的HTML5技术,可自适应不同尺寸的手机屏幕;</p>
+            <p>用户体验:访问速度快、浏览清晰、让企业形象展现更加精彩;</p>
+            <p>数据同步:与电脑网站呈现内容、所开发网站功能相同;</p>
+            <p>手机推广:必须要有手机网站,通过手机搜索内容的时,搜索引擎会优先把手机网站排在前面,有利于</p>
+            <p>移动端SEO优化;</p>
+            <p>宣传推广:可以更好的结合微博、微信做推广,网址二维码印在名片上、物料上,用户扫描二维码即可进度手机网站</p>
+        </div>
+    </div>
+    <div class="zs_lal">
+    	<h2>手机<span>案例</span>展示</h2>
+        <div class="zs_lal_box">
+        	<ul class="ewm clearfix" id="zs_lal_ewm">
+                <li class="fl"><img src="img/wzjs_ohone_033.png"></li>
+                <li class="fl"><img src="img/wzjs_ohone_033.png"></li>
+                <li class="fl"><img src="img/wzjs_ohone_03.png"></li>
+                <li class="fl"><img src="img/wzjs_ohone_03.png"></li>
+            </ul>
+        </div>
+        <a href="javascript:;" class="prev" id="prev"></a>
+        <a href="javascript:;" class="next" id="next"></a>
+    </div>
+    <div class="zs_ltc">
+    	<h2 class="zs_ltc_rc">网站建设套餐</h2>
+        <div class="left">
+        	<h2>PC版网站+手机网站</h2>
+            <h3>[多终端展示模式]手机网站与电脑网站数据同步、功能相同</h3>
+            <p>有助于企业推广宣传(二维码),增加受众目标覆盖范围,同域名自动识别</p>
+            <p>设备,移动搜索优先展现,自适应不通尺寸移动设备,顺畅的访问速度、清晰的</p>
+            <p>展现形式,提升用户体验,全面提升企业形象</p>
+        </div>
+        <div class="right">
+        	<h2>PC版网站+手机网站+网站优化</h2>
+            <h3>[让用户]通过相关关键词搜到您的网站</h3>
+            <p>网站优化,使企业、产品核心重点关键词、相关关键词搜索结果排名靠前,通过</p>
+            <p>关键词搜索时被发现,点击无费用,靠前关键词的不断增加,还可以辅助竞价推</p>
+            <p>广降低成本。</p>
+        </div>
+    </div>
+    <div class="zs_lss">
+    	<div class="tp">
+        	<h2>易拓网络-网站建设优势</h2>
+            <ul class="con clearfix">
+            	<li class="fl con_o">
+                	<h3>正规制作流程</h3>
+                    <p>帮助购买域名并进行实名认证</p>
+                    <p>辅助进行工信部网站ICP备案、</p>
+                    <p>网站公安备案,杜绝省去前期工</p>
+                    <p>作,造成后期营销推广过程中所</p>
+                    <p>产生的不必要的麻烦。</p>
+                </li>
+                <li class="fl con_e">
+                	<h3>注重运营稳定及安全</h3>
+                    <p>易拓网络与阿里云及百度开放云合</p>
+                    <p>作,为用户提供上云服务;网站建</p>
+                    <p>设均采用阿里云虚拟主机、阿里云</p>
+                    <p>服务器,百度开放云虚拟主机、百</p>
+                    <p>度开放云服务器;保障网站稳定运</p>
+                	<p>行、数据安全性。</p>
+                </li>
+
+				<li class="fl con_t">
+                	<h3>专注用户体验及营销性</h3>
+                    <p>会做网站的公司很多,但懂营销的</p>
+                    <p>很少,易拓网络网站建设服务在网</p>
+                    <p>策划时充分为企业考虑网站的营</p>
+                    <p>销性,设计时注重用户体验及广告</p>
+                    <p>投放规划,开发时合理部署网站关</p>
+                    <p>键词,使网站有利于营销推广及</p>
+                    <p>SEO优化。</p>
+                </li>
+
+				<li class="fl con_f">
+                	<h3>完美的售后维护</h3>
+                    <p>7×23H服务保障,提供网站后台</p>
+                    <p>使用指导,定期网站程序查毒、杀</p>
+                    <p>毒,删除木马文件、修复植入木马</p>
+                    <p>的程序、进行网站数据备份;及时</p>
+                    <p>解决未知的意外原因或误操作造成</p>
+                    <p>网站程序出现报错情况,保障网站</p>
+                    <p>正常运营。</p>
+                </li>
+
+				<li class="fl con_w">
+                	<h3>专业的咨询解答</h3>
+                    <p>为网站建设用户提供专业的网络营</p>
+                    <p>销问题咨询服务,帮助用户分析推</p>
+                    <p>荐可行性网络营销策略,解答在营</p>
+                    <p>销推广过程中遇到问题。</p>
+                </li>
+
+            </ul>
+        </div>
+        <div class="bot">
+        	<h2>易拓网络不仅提供网站建设服务,<span>更专注于网络营销!</span></h2>
+            <ul class="cot clearfix">
+            	<li class="fl">
+                	<h3>网站优化</h3>
+                    <p>搜索关键词时网站排名靠前,让客</p>
+                    <p>户通过相关关键词搜到您的网站,提高</p>
+                    <p>网站曝光率从而赢得更多潜在客户。</p>
+                    <a href="javascript:;">详情了解</a>
+                </li>
+                <li class="fl">
+                	<h3>网站优化</h3>
+                    <p>搜索关键词时网站排名靠前,让客</p>
+                    <p>户通过相关关键词搜到您的网站,提高</p>
+                    <p>网站曝光率从而赢得更多潜在客户。</p>
+                    <a href="javascript:;">详情了解</a>
+                </li>
+                <li class="fl">
+                	<h3>网站优化</h3>
+                    <p>搜索关键词时网站排名靠前,让客</p>
+                    <p>户通过相关关键词搜到您的网站,提高</p>
+                    <p>网站曝光率从而赢得更多潜在客户。</p>
+                    <a href="javascript:;">详情了解</a>
+                </li>
+                <li class="fl sps">
+                	<h3>网站优化</h3>
+                    <p>搜索关键词时网站排名靠前,让客</p>
+                    <p>户通过相关关键词搜到您的网站,提高</p>
+                    <p>网站曝光率从而赢得更多潜在客户。</p>
+                    <a href="javascript:;">详情了解</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="mor">
+    	<i>网站<em>建设</em>案例</i>
+        <div class="mor_hid">
+        	<ul class="clearfix" id="mor_byt">
+        		<li class="fl">
+	        		<div class="service_hm_zs_dv">
+	        			<img src="img/hmzs_1.png">
+	        			<span>PC网站建设+手机网站制作+微网站建设</span>
+	        		</div>
+	        		<p>宏美装饰</p>
+	        	</li>
+	            <li class="fl">
+	            	<div class="service_hm_zs_dv">
+	        			<img src="img/hmzs_2.png">
+	        			<span>PC网站建设+手机网站制作+微网站建设</span>
+	        		</div>
+	        		<p>宏美装饰</p></li>
+	            <li class="fl spc">
+	            	<div class="service_hm_zs_dv">
+	        			<img src="img/hmzs_3.png">
+	        			<span>PC网站建设+手机网站制作+微网站建设</span>
+	        		</div>
+	        		<p>宏美装饰</p>
+	            </li>
+            </ul>
+        </div>
+        <a href="javascript:;" class="mm">更多案例查看</a>
+    </div>
+</div>
+<div class="ws">
+	<div class="ws_gg">
+    	<a href="javascript:;"><img src="img/wjjs_gg_03.png"></a>
+    </div>
+</div>
+<div class="jans_ft">
+    	<!--内容-->
+        <div class="character_tex clearfix">
+            <div class="company fl">
+                <h2>公司动态</h2>
+                <i>2016/08/08</i>
+                <p><span>百度</span>严格限制商业推广数量 所有页面均低于30%</p>
+                <em>5月24日下午,百度推广通过官方微博宣布:经过一周多紧张的算法调整和方案测试后,自2016年5月23日起,百度搜索结果将全面实现每页面商业推广信息...</em>
+                <ul class="mess">
+                    <li class="clearfix"><p class="fl">-&nbsp;&nbsp;乐陵网络推广|乐陵网络营销公司-易拓网络营销公司</p><span class="fr">2016/08/08</span></li>
+                    <li class="clearfix"><p class="fl">-&nbsp;&nbsp;济南有哪些网络优化公司?-济南网站优化</p><span class="fr">2016/08/08</span></li>
+                    <li class="clearfix"><p class="fl">-&nbsp;&nbsp;齐河网络公司-齐河网络营销公司选易拓网络,...</p><span class="fr">2016/08/08</span></li>
+                    <li class="clearfix"><p class="fl">-&nbsp;&nbsp;百度严格限制商业推广数量 所有页面均低于</p><span class="fr">2016/08/08</span></li>
+                </ul>
+            </div>
+            <div class="ques fl">
+                <h2>推广问答</h2>
+                <i>2016/08/08</i>
+                <p><span>百度</span>严格限制商业推广数量 所有页面...</p>
+                <em>5月24日下午,百度推广通过官方微博宣布:经过一周多紧张的算法调整和方案测试后,自2016年5月23日起,百度搜索结果将全面实现每页面商业推广信息...</em>
+                <ul class="mess">
+                    <li><p>-&nbsp;&nbsp;乐陵网络推广|乐陵网络营销公司-易拓网络营销公司</p></li>
+                    <li><p>-&nbsp;&nbsp;济南有哪些网络优化公司?-济南网站优化</p></li>
+                    <li><p>-&nbsp;&nbsp;齐河网络公司-齐河网络营销公司选易拓网络,...</p></li>
+                    <li><p>-&nbsp;&nbsp;百度严格限制商业推广数量 所有页面均低于</p></li>
+                <ul>
+            </div>
+            <div class="ques fl">
+                <h2>营销知识</h2>
+                <i>2016/08/08</i>
+                <p><span>百度</span>严格限制商业推广数量 所有页面...</p>
+                <em>5月24日下午,百度推广通过官方微博宣布:经过一周多紧张的算法调整和方案测试后,自2016年5月23日起,百度搜索结果将全面实现每页面商业推广信息...</em>
+                <ul class="mess">
+                    <li><p>-&nbsp;&nbsp;乐陵网络推广|乐陵网络营销公司-易拓网络营销公司</p></li>
+                    <li><p>-&nbsp;&nbsp;济南有哪些网络优化公司?-济南网站优化</p></li>
+                    <li><p>-&nbsp;&nbsp;齐河网络公司-齐河网络营销公司选易拓网络,...</p></li>
+                    <li><p>-&nbsp;&nbsp;百度严格限制商业推广数量 所有页面均低于</p></li>
+                <ul>
+            </div>
+    	</div>
+    	<!--内容结束-->
+    </div>
+</div>
+<footer>
+    <div class="ft_x"></div>
+    <div class="ft_bd">
+        <div class="ft_bd_tp">
+            <ul>
+                <li>
+                    <img src="img/weixin.png">
+                    <p>在线客服</p>
+                    <span>服务时段：8：30 - 17:30</span>
+                </li>
+                <li>
+                    <img src="img/dianhua.png">
+                    <p>400-007-9607</p>
+                    <span>7*24小时客服电话</span>
+                </li>
+                <li class="ft_bd_tp_bd">
+                    <img src="img/dianhua.png">
+                    <p>0531-6885 9607</p>
+                    <span>座机服务号</span>
+                </li>
+            </ul>
+        </div>
+        <div class="ft_list">
+            <p>我们的服务</p>
+            <ul class="ft_list_lf">
+                <li><a href="#">营销咨询顾问</a> </li>
+                <li><a href="#">网络媒体顾问</a> </li>
+                <li><a href="#">网站优化</a> </li>
+                <li><a href="#">竞价推广</a> </li>
+                <li><a href="#">网络推广</a> </li>
+            </ul>
+            <ul class="ft_list_md">
+                <li><a href="#">网站建设</a> </li>
+                <li><a href="#">网络推广</a> </li>
+                <li><a href="#">营销托管</a> </li>
+                <li><a href="#">企业上云</a> </li>
+            </ul>
+            <ul class="ft_list_rt">
+                <li><a href="#">服务客户</a> </li>
+                <li><a href="#">了解我们</a> </li>
+                <li><a href="#">加入我们</a> </li>
+            </ul>
+            <img src="img/in_tp1.jpg">
+        </div>
+        <div class="ft_md"><p>友情链接：<a href="#">渭南网站建设</a>|<a href="#">西安网站建设</a>|<a href="#">成都网站建设</a>|<a href="#">西安网站制作</a>|<a href="#">常州网站建设</a>|<a href="#">佛山做网站</a>|<a href="#">菏泽网站建设</a>|<a href="#">深圳网站建设公司</a>|<a href="#">google海外推广</a>|<a href="#">济南网络推广公司</a>|<a href="#">济南网络优化</a>|</p></div>
+        <div class="ft_bm">
+            <p>济南易拓网络技术有限公司 公司地址：天桥区东工商河路17号 版权所有</p>
+            <p>鲁ICP备13019725号-1  站长统计</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

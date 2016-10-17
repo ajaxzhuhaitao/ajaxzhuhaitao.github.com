@@ -1,0 +1,257 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+html, body, div, span,h1, h2, h3, h4, h5, h6, p, 
+a, em, img,strong,dl, dt, dd, ol, ul, li,form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, footer, header,menu, nav, section,audio, video, input {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    font-family: Helvetica,"微软雅黑";
+}
+
+html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {
+    -webkit-text-size-adjust: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+ 
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+a{outline: none;text-decoration: none;color: #333;}
+input[type="submit"],input[type="button"],input[type="text"],textarea,input[type="password"],input[type="tel"]{-webkit-appearance:none;}
+input[type="text"],input[type="password"],input[type="tel"],input[type="number"]{line-height:normal;}
+/*select{-webkit-appearance:none;background: transparent;}*/
+::-webkit-input-placeholder {color:#999;}
+::-moz-placeholder {color:#999;}
+
+img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.head{
+ width: 100%;
+ background: #000;
+ color: #f5f5f5;
+ text-align: center;
+ display: block;
+ height: 30px;
+ line-height: 30px
+ }
+ .main{
+    width: 100%;
+    height: auto;
+    background: #f5f5f5
+ }
+ .main ul{
+    width: 80%;
+    margin: 0 auto;
+    padding:20px 0;
+
+ }
+ .main input{
+    width: 100%;
+    height: 40px;
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+    padding-left: 10px;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+ }
+  .main ul li{
+    margin-bottom: 20px
+  }
+  input:focus{
+    border:none;
+    border-color: #03a9f4;
+  box-shadow:0 0 10px rgba(32,183,255,.9); 
+-moz-box-shadow:0 0 10px rgba(3,169,244,1);
+-webkit-box-shadow:0 0 10px rgba(25,134,255,3);
+}
+ select:focus{
+    border-color: #03a9f4;
+  box-shadow:0 0 10px rgba(32,183,255,.9); 
+-moz-box-shadow:0 0 10px rgba(3,169,244,1);
+-webkit-box-shadow:0 0 10px rgba(25,134,255,3);
+}
+.line{
+    display: block;
+    height: 0;
+    overflow: hidden;
+    border-top: 1px #c2c2c2 solid;
+    margin-top: 20px;
+}
+
+button{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    border: 0;
+    background-color: #03a9f4;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1em
+}
+
+body,html{
+	height:100%;
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+}
+.JK{
+    position: relative;
+    z-index: 3;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+
+}
+.JP{
+    width: 100%;
+    height: 100%;
+    background: #f5f5f5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+}
+.entrance{
+    height: 100%;
+    width: 100%;
+    overflow-y:hidden;
+    background: url(http://image.wejiji.com/home/Images/mbj.jpg) top center no-repeat;
+   /* background: rgba(0,0,0,.5);*/
+   background-size:cover;
+}
+.entrance ul{
+    font-size: 1em;
+    width: 70%;
+    margin: 50% auto;
+}
+.entrance ul li{
+    margin-top: 30px;
+}
+.enterJK{
+    width: 100%;
+    height:50px;
+}
+.enterJP{
+    background: #fafafa;
+    border:1px solid #03a9f4;
+    color: #03a9f4
+}
+.fa{margin-left: 5px}
+
+.JP label{
+    display: inline-block;
+    width: 30%;
+    line-height: 40px;
+    padding-left:10px;
+}
+.JP select{
+  width: 70%;
+    height: 40px;
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+    padding-left: 10px;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    font-size: 1em;
+    background: #fafafa
+}
+.JK label{
+    display: inline-block;
+    width: 20%;
+    line-height: 40px;
+    padding-left: 10px
+}
+.JK i{
+    display: inline-block;
+    width: 15%;
+    line-height: 40px;
+    text-align: center;
+    font-style: normal;
+}
+.JP i{
+    display: inline-block;
+    width: 10%;
+    line-height: 40px;
+    text-align: center;
+    font-style: normal;
+}
+.fl{float: left;}
+.fr{float: right;}
+
+.pop{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.6);
+    position: fixed;
+    z-index: 12;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.ensure{
+    font-size: 20px;
+    text-align: center;
+    width: 80%;
+    height: 30vh;
+    margin-left: 10%;
+    border-radius: 5px;
+    background: #fafafa;
+    margin-top: 50%;
+    position: fixed;
+    padding: 5vh 0;
+}
+.ensure span{
+    width: 50%;
+    height: 50px;
+    color: #fff;
+    background: #03a9f4;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+.ensure li{
+    margin-bottom:3vh
+}

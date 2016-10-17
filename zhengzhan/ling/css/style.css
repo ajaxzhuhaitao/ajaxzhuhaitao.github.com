@@ -1,0 +1,145 @@
+.first{width:1007px; height:50px; background:url(../img/%E8%83%8C%E6%99%AF.jpg) repeat-y; margin:0 auto;}
+.first .chang{width:977px; height:50px; position:relative;}
+.first .chang .pic{width:101px; height:50px;}
+.first .chang ul .NO1{width:58px; height:27px; background:url(../img/zhuce.jpg) no-repeat; font-size:12px; position:absolute; left:485px; top:11px;}
+.first .chang ul .NO1 a{text-align:center; line-height:27px; height:27px; display:block; margin-left:27px;}
+.first .chang ul .NO2{width:58px; height:27px; background:url(../img/chongzhi.jpg) no-repeat; font-size:12px; position:absolute; left:549px; top:11px;}
+.first .chang ul .NO2 a{text-align:center; line-height:27px; height:27px; display:block; margin-left:27px;}
+.first .chang ul .NO3{width:58px; height:27px; background:url(../img/changyou+.jpg) no-repeat; font-size:12px; position:absolute; left:615px; top:11px;}
+.first .chang ul .NO3 a{text-align:center; line-height:27px; height:27px; display:block; margin-left:27px;}
+.first .chang ul .NO4{width:58px; height:27px; background:url(../img/xia.jpg) 45px 9px no-repeat; font-size:12px; position:absolute; left:694px; top:11px;}
+.first .chang ul .NO4 a{text-align:center; line-height:27px; height:27px; display:block;}
+.first .chang ul .NO5{width:58px; height:27px; background:url(../img/xia.jpg) 73px 9px no-repeat; font-size:12px; position:absolute; left:781px; top:11px; width:80px;}
+.first .chang ul .NO5 a{text-align:center; line-height:27px; height:27px; display:block;}
+.first .chang ul .NO6{width:58px; height:27px; background:url(../img/xia.jpg) 74px 9px no-repeat; font-size:12px; position:absolute; left:895px; top:11px; width:80px;}
+.first .chang ul .NO6 a{text-align:center; line-height:27px; height:27px; display:block;}
+.bor{width:1007px; height:5px; background:url(../img/jianbian.jpg) repeat-y; margin:0 auto;}
+.sec{width:1007px; height:550px; margin:0 auto; background:url(../img/header_main.jpg) center 0 repeat-x; position:relative;}
+.sec h2{width:1007px; height:110px; background:url(../img/logo.gif) no-repeat; position:relative;}
+.sec h2 ul{width:800px; height:41px; position:absolute; left:205px; top:30px;}
+.sec h2 ul li{width:75px; height:41px; color:#d0d5e9;}
+.sec h2 ul .mmd .one{width:70px;}
+.sec h2 ul li .one{font-size:18px; text-align:center; font-weight:bold;}
+.sec h2 ul li .two{font-size:10px; text-align:center;}
+.sec h2 ul .mr{margin-right:15px;}
+.sec .click{width:34px; height:118px; background:url(../img/beijingse.jpg) repeat-x; border:2px solid #b4482c; position:absolute; left:0; top:247px; font-size:20px; text-align:center; }
+.sec .click a{font-weight:bold; color:#fefff8;}
+.download{width:1007px; height:413px; margin:0 auto; background:url(../img/content.jpg) center 0 repeat-x;}
+.download .left{width:622px; height:413px;}
+.download .left ul{width:618px; height:109px; margin-left:4px; background:url(../img/download1.jpg) no-repeat;}
+.download .left ul .NO1{width:215px; height:108px; padding-top:35px;}
+.download .left ul .chinese{font-size:32px; font-weight:bold; color:#f4ffff; text-align:center; display:block;}
+.download .left ul .english{font-size:12px; font-weight:bold; color:#f4ffff; text-align:center;}
+.download .left ul .NO2 a{width:100px; height:108px; font-size:16px; font-weight:bold; padding-top:65px; display:block; color:#6e75ab;}
+.download .left .bot{width:621px; height:306px; position:relative;}
+.download .left .bot .pic{width:621px; height:306px; margin-top:-64px; border:none;}
+.download .left .bot .fit{width:30px; height:75px; position:absolute; left:15px; top:14px; border:none;}
+.download .left .bot .sed{width:30px; height:75px; position:absolute; left:15px; top:100px; border:none;}
+.download .right{width:383px; height:413px;}
+.download .right .ttop{width:382px; height:66px; background:url(../img/sever.png) center center no-repeat; position:relative;}
+.download .right .ttop .no1{width:235px; height:24px; color:#adb9e0; font-size:12px; font-weight:bold; position:absolute; left:100px; top:16px;}
+.download .right .ttop .no2{width:235px; height:24px; color:#adb9e0; font-size:12px; font-weight:bold; position:absolute; left:100px; top:36px;}
+.download .right .ttop li span{color:#f00000;}
+.download .right .midd{width:377px; height:43px; background:url(../img/MMORPG_03.png) no-repeat;  padding-left:5px;}
+.download .right .midd p{width:196px; height:15px; font-size:12px; color:#696f88; font-weight:bold; background:url(../img/MMORPG_12_05.png) 146px 0 no-repeat; margin-top:14px;}
+.download .right .midd p a{color:#f93d1a; text-decoration:underline;}
+.download .right .midd span{font-size:12px; margin-top:14px; color:#696f88; font-weight:bold;}
+.download .right .midd .pic1{margin-left:10px;}
+.download .right .bott{width:381px; height:301px;}
+.download .right .bott .zong{width:381px; height:56px; background:url(../img/MORP1_03.png) no-repeat;}
+.download .right .bott .zong a{width:95px; height:56px; font-size:14px; color:#eaeaeb; text-align:center; line-height:59px;}
+.download .right .bott .zong .no1{background:url(../img/MMORPG_12_15_03.png) no-repeat;}
+.download .right .bott .zong .no2{margin-left:1px;}
+.download .right .bott .more{width:381px; height:229px; background:url(../img/MORPG1114436_03.png) no-repeat; padding-top:18px;}
+.download .right .bott .more .shang{width:347px; height:35px; background:url(../img/changkuang_05.png) no-repeat; text-align:center; margin-left:17px;}
+.download .right .bott .more .shang a{font-size:14px; color:#d33908; line-height:35px;}
+.download .right .bott .more .xia{width:335px; height:197px; padding-left:25px; padding-right:19px;}
+.download .right .bott .more .xia p{height:25px; line-height:25px;}
+.download .right .bott .more .xia p a{font-size:12px; color:#9ca7ca;}
+.download .right .bott .more .xia p span{font-size:12px; color:#9ca7ca;}
+.download .right .bott .more .xia p .gend{width:70px; height:30px; line-height:30px; font-size:12px; color:#9ca7ca; text-align:right; background:url(../img/MORPGmore_03.png) 2px 9px no-repeat;}
+.guanggao{width:1007px; height:175px; background:#1c1a25; margin:0 auto; padding-top:50px;}
+.guanggao .juli{margin-right:8px; margin-left:2px;}
+.guanggao a{border:1px solid #433b4f; width:242px; height:130px; display:block;}
+.intro{width:1007px; height:379px; margin:0 auto; background:#1c1a25;}
+.intro .left{width:665px; height:380px;}
+.intro .left .on1{width:658px; height:61px; background:url(../img/MMORPiukG_02.png) no-repeat;}
+.intro .left .on1 a{width:131px; height:60px; font-size:16px; color:#e7e7e7; text-align:center; line-height:60px;}
+.intro .left .on1 .non1{background:url(../img/MMORnenPG_03.png) no-repeat;}
+.intro .left .on2{width:658px; height:291px; background:url(../img/zhanshi.jpg) no-repeat;}
+.intro .right{width:322px; height:374px;}
+.intro .right h2{width:300px; height:46px; font-size:20px; color:#d4b07f; background:url(../img/huodongzhongxin_03.png) no-repeat; line-height:33px; text-indent:2em;}
+.intro .right .text{width:322px; height:160px; background:url(../img/1.jpg) no-repeat; position:relative;}
+.intro .right .text .pic{width:316px; height:36px; background:url(../img/toumingceng_03.png) no-repeat; position:absolute; left:-2px; top:113px; font-size:14px; color:#fff; line-height:36px; padding-left:6px;}
+.intro .right ul{width:322px; height:148px;}
+.intro .right ul li{width:322px; height:23px; background:url(../img/shengshi_03.png) no-repeat; font-size:12px; color:#a6b2d8; margin-bottom:4px;}
+.intro .right ul li p{width:250px; height:25px; line-height:25px; text-indent:2em;}
+.intro .right ul li span{width:60px; height:25px; line-height:25px; text-align:center;}
+.last{width:1007px; height:801px; background:#1d1a23; margin:0 auto; position:relative;}
+.last dl{width:192px; height:187px; background:url(../img/kuaijierukou_02.png) no-repeat; padding-left:23px;}
+.last dl dt{width:192px; height:42px; font-size:16px; color:#b1a37b; text-align:center; line-height:42px; margin-bottom:8px;}
+.last dl dd{width:85px; height:29px; font-size:14px; color:#867999; text-align:left; line-height:42px;}
+.last .middle{width:215px; height:262px; background:url(../img/main_a3.jpg) no-repeat; position:absolute; left:0; top:219px;}
+.last .media{width:206px; height:36px; background:url(../img/asdfaqwORPG_03.png) no-repeat; position:absolute; left:6px; top:486px; display:block; font-size:16px; color:#9b8db1; text-align:center; line-height:36px;}
+.last .dcha{position:absolute; left:0; top:536px; display:block;}
+.last .cent{width:425px; height:346px; position:absolute; left:235px; top:0;}
+.last .cent h2{width:400px; height:42px; text-indent:2em; font-size:20px; color:#f4cb9d; line-height:29px; background:url(../img/tubiaoMMORPG_03.png) 1px 1px no-repeat;}
+.last .cent ul{width:425px; height:47px;}
+.last .cent ul .NO1{width:105px; height:47px; text-align:center; line-height:47px; font-size:14px; color:#dfdfe1; border-top:1px solid #433b4f; border-left:1px solid #433b4f; border-right:1px solid #433b4f; background:#322b3c;}
+.last .cent ul .NO2{width:105px; height:47px; text-align:center; line-height:47px; font-size:14px; color:#a295b7; border-right:1px solid #433b4f; border-top:1px solid #433b4f; border-bottom:1px solid #433b4f;}
+.last .cent ul .NO3{width:105px; height:47px; text-align:center; line-height:47px; font-size:14px; color:#a295b7; border-bottom:1px solid #433b4f; background:url(../img/tianjia.jpg) 4px 16px no-repeat;}
+.last .cent .wjgl{width:425px; height:258px; background:url(../img/wj.jpg) 22px 26px no-repeat #322b3c; border-left:1px solid #433b4f; border-bottom:1px solid #433b4f; border-right:1px solid #433b4f; position:relative;}
+.last .cent .wjgl ul{width:253px; height:208px; position:absolute; left:143px; top:23px;}
+.last .cent .wjgl ul li{width:250px; height:25px; line-height:25px; font-size:14px; color:#968aaa;}
+.last .cent1{width:323px; height:346px; position:absolute; left:682px; top:0;}
+.last .cent1 h2{width:321px; height:42px; text-indent:2em; font-size:20px; color:#f4cb9d; line-height:29px; background:url(../img/tubiaoMMORPG_05.png) 1px 1px no-repeat;}
+.last .cent1 .yxzl{width:303px; height:306px; background:#26212d; padding-left:18px;}
+.last .cent1 .NO1{width:287px; height:60px; border-bottom:1px dashed #594f67; font-size:14px;}
+.last .cent1 .NO1 .fir{width:64px; height:26px; background:#594f67; color:#fff; line-height:26px; text-align:right; margin-top:17px;}
+.last .cent1 .NO1 .fuzhu{width:16px; height:26px; background:url(../img/fuzhuRPG_03.png) no-repeat; margin-top:17px; margin-right:13px;}
+.last .cent1 .NO1 .sef{width:63px; height:17px; border-right:2px solid #594f67; font-size:14px; color:#7e7290; text-align:center; margin-top:21px;}
+.last .cent1 .NO1 .spc{border:0;}
+.last .cent1 .NO2{width:287px; height:60px; border-bottom:1px dashed #594f67; font-size:14px;}
+.last .cent1 .NO2 .fir{width:64px; height:26px; background:#594f67; color:#fff; line-height:26px; text-align:right; margin-top:17px;}
+.last .cent1 .NO2 .fuzhu{width:16px; height:26px; background:url(../img/fuzhuRPG_03.png) no-repeat; margin-top:17px; margin-right:10px;}
+.last .cent1 .NO2 .sef{width:47px; height:17px; border-right:2px solid #594f67; font-size:14px; color:#7e7290; text-align:center; margin-top:21px;}
+.last .cent1 .NO2 .spc{border:0;}
+.last .cent1 .NO3{width:287px; height:60px; border-bottom:1px dashed #594f67; font-size:14px;}
+.last .cent1 .NO3 .fir{width:76px; height:26px; background:#594f67; color:#fff; line-height:26px; text-align:right; margin-top:17px;}
+.last .cent1 .NO3 .fuzhu{width:16px; height:26px; background:url(../img/fuzhuRPG_03.png) no-repeat; margin-top:17px; margin-right:-1px;}
+.last .cent1 .NO3 .sef{width:59px; height:17px; border-right:2px solid #594f67; font-size:14px; color:#7e7290; text-align:center; margin-top:21px;}
+.last .cent1 .NO3 .spc{border:0;}
+.last .cent1 .NO4{width:287px; height:60px; font-size:14px;}
+.last .cent1 .NO4 .fir{width:76px; height:26px; background:#594f67; color:#fff; line-height:26px; text-align:right; margin-top:17px;}
+.last .cent1 .NO4 .fuzhu{width:16px; height:26px; background:url(../img/fuzhuRPG_03.png) no-repeat; margin-top:17px; margin-right:-1px;}
+.last .cent1 .NO4 .sef{width:63px; height:17px; border-right:2px solid #594f67; font-size:14px; color:#7e7290; text-align:center; margin-top:21px;}
+.last .cent1 .NO4 .spc{border:0;}
+.last .cent1 a{width:280px; height:41px; display:block; font-size:22px; color:#b1a1ca; border:2px solid #4b3f5c; line-height:41px; text-align:center;}
+.last .cent2{width:425px; height:346px; position:absolute; left:235px; top:388px;;}
+.last .cent2 h2{width:400px; height:42px; text-indent:2em; font-size:20px; color:#f4cb9d; line-height:29px; background:url(../img/tubiaoMMORPG_09.png) 1px 1px no-repeat;}
+.last .cent2 ul{width:425px; height:47px;}
+.last .cent2 ul .NO1{width:105px; height:47px; text-align:center; line-height:47px; font-size:14px; color:#dfdfe1; border-top:1px solid #433b4f; border-left:1px solid #433b4f; border-right:1px solid #433b4f; background:#322b3c;}
+.last .cent2 ul .NO2{width:105px; height:47px; text-align:center; line-height:47px; font-size:14px; color:#a295b7; border-right:1px solid #433b4f; border-top:1px solid #433b4f; border-bottom:1px solid #433b4f;}
+.last .cent2 ul .NO3{width:105px; height:47px; text-align:center; line-height:47px; font-size:14px; color:#a295b7; border-bottom:1px solid #433b4f; background:url(../img/tianjia.jpg) 4px 16px no-repeat;}
+.last .cent2 .wjgl{width:425px; height:258px; background:url(../img/1031.jpg) 22px 26px no-repeat #322b3c; border-left:1px solid #433b4f; border-bottom:1px solid #433b4f; border-right:1px solid #433b4f; position:relative;}
+.last .cent2 .wjgl ul{width:253px; height:208px; position:absolute; left:143px; top:23px;}
+.last .cent2 .wjgl ul li{width:250px; height:25px; line-height:25px; font-size:14px; color:#968aaa;}
+.last .cent3{width:323px; height:346px; position:absolute; left:682px; top:388px;}
+.last .cent3 h2{width:310px; height:42px; text-indent:2em; font-size:20px; color:#f4cb9d; line-height:29px; background:url(../img/tubiaoMMORPG_10.png) 1px 1px no-repeat;}
+.last .cent3 ul{width:320px; height:47px;}
+.last .cent3 ul .NO1{width:105px; height:47px; text-align:center; line-height:47px; font-size:14px; color:#dfdfe1; border-top:1px solid #433b4f; border-left:1px solid #433b4f; border-right:1px solid #433b4f; background:#322b3c;}
+.last .cent3 ul .NO2{width:105px; height:47px; text-align:center; line-height:47px; font-size:14px; color:#a295b7; border-right:1px solid #433b4f; border-top:1px solid #433b4f; border-bottom:1px solid #433b4f;}
+.last .cent3 ul .NO3{width:105px; height:47px; text-align:center; line-height:47px; font-size:14px; color:#a295b7; border-bottom:1px solid #433b4f; background:url(../img/tianjia.jpg) 4px 16px no-repeat;}
+.last .cent3 .wjgl{width:308px; height:235px; border-left:1px solid #433b4f; border-bottom:1px solid #433b4f; border-right:1px solid #433b4f; position:relative; background:#322b3c; padding-left:12px; padding-top:23px;}
+.last .cent3 .wjgl a{width:138px; height:91px; display:block;}
+.last .cent3 .wjgl .no222,.last .cent3 .wjgl .no444{margin-left:22px;}
+.last .cent3 .wjgl .no333{margin-top:23px;}
+.last .cent3 .wjgl .no444{margin-top:23px;}
+.play{width:1007px; height:30px; margin:0 auto; background:#1d1a23;}
+.play .juz{width:893px; height:30px; margin:0 auto; background:url(../img/game_anc.jpg) no-repeat; font-size:16px; color:#9587ab; text-align:center; line-height:40px;}
+.play1{width:1007px; height:108px; margin:0 auto; background:#1d1a23;}
+.play1 .juz1{width:896px; height:108px; margin:0 auto;} 
+.play1 .juz1 p{font-size:16px; text-align:center; color:#615770; height:40px; line-height:40px;}
+.llk{width:1007px; margin:0 auto; background:url(../img/ggggggMORPG_02.png) center 0 repeat-x; height:10px;}
+.fot{width:763px; height:99px; background:url(../img/changyouMMORPG_03.png) 73px 20px no-repeat #181818; margin:0 auto; padding-left:244px; padding-top:27px;}
+.fot p{font-size:12px; color:#535353; height:32px; line-height:28px;}

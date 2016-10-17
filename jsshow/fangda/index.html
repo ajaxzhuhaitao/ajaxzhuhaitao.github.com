@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	body{
+		background:hotpink;
+	}
+	img{
+		vertical-align: top;
+	}
+	#box{
+		width: 400px;
+		height: 400px;
+		position: relative;
+	}
+	#small{
+		width: 400px;
+		height: 400px;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+	#small img{
+		width: 400px;
+		height: 400px;
+	}
+	#small span{
+		width: 200px;
+		height: 200px;
+		position: absolute;
+		left: 0;
+		top: 0;
+		background: yellow;
+		opacity: 0.3;
+		cursor: move;
+		display: none;
+	}
+	#div1{
+		width: 400px;
+		height: 400px;
+		overflow:hidden;
+		position: absolute;
+		left: 410px;
+		top: 0;
+		display: none;
+	}
+	#div1 img{
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+
+</style>
+<script>
+	window.onload = function(){
+		var oSmall = document.getElementById('small');
+		var oSpan = oSmall.getElementsByTagName('span')[0];
+		var oDiv = document.getElementById('div1');
+		var oImg = oDiv.getElementsByTagName('img')[0];
+
+		// 鼠标移入小图里面
+		oSmall.onmouseover = function(){
+			oSpan.style.display = 'block';
+			oDiv.style.display = 'block';
+		}
+		oSmall.onmouseout = function(){
+			oSpan.style.display = 'none';
+			oDiv.style.display = 'none';
+		}
+
+		oSmall.onmousemove = function(ev){
+			var oEvent = ev || event;
+			var x = oEvent.clientX - oSpan.offsetWidth/2;
+			var y = oEvent.clientY - oSpan.offsetHeight/2;
+
+			if(x <= 0){
+				x = 0;
+			}
+			if(x >= oSmall.offsetWidth - oSpan.offsetWidth){
+				x = oSmall.offsetWidth - oSpan.offsetWidth;
+			}
+
+			if(y <= 0){
+				y = 0;
+			}
+			if(y >= oSmall.offsetHeight - oSpan.offsetHeight){
+				y = oSmall.offsetHeight - oSpan.offsetHeight;
+			}
+
+			oSpan.style.left = x + 'px';
+			oSpan.style.top = y + 'px';
+
+			oImg.style.left = -x*(oImg.offsetWidth-oDiv.offsetWidth)/(oSmall.offsetWidth-oSpan.offsetWidth) + 'px';
+			oImg.style.top = -y*(oImg.offsetHeight-oDiv.offsetHeight)/(oSmall.offsetHeight-oSpan.offsetHeight) + 'px';
+		}
+	}
+</script>
+</head>
+
+<body>
+<div id="box">
+	<div id="small">
+		<img src="img/meizi.png" alt="">
+		<span></span>
+	</div>
+	<div id="div1">
+		<img src="img/meizi.png" alt="">
+	</div>
+</div>
+</body>
+</html>

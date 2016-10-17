@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>手机报名</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link rel="stylesheet" href="css/mobile.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css" />
+	<script src="script/jquery-1.8.3.js"></script>
+	<script type="text/javascript" src="script/mobile.js"></script>
+</head>
+<body>
+
+    <!--弹框-->
+   <div class="pop">
+        <ul class="ensure">
+            <li id="msg">确定删除吗？</li>
+            <li>
+              <span id="sure" onclick="shut()">确定</span>
+            </li>
+        </ul>
+    </div>
+
+   
+
+   <div class="JK">
+     <div class="head">零售商报名入口</div>
+	  <img src="http://image.wejiji.com/home/Images/mbanner.jpg">
+      <div class="main">
+    	<ul>
+    		<li><input type="text" placeholder="姓名" id="name" ></li>
+    		<li><input type="text" placeholder="手机号" id="phone"></li>
+    		<li><input type="text" placeholder="职位" id="position"></li>
+    		<li><input type="text" placeholder="地址/地区" id="area"></li>
+    		<li><input type="text" placeholder="商铺规模" id="scale"></li>
+        <li><input type="text" placeholder="商铺类型" id="shoptype"></li>
+    		<li><input type="text" placeholder="货品品类" id="category"></li>
+    		<li><input type="text" placeholder="货品风格" id="stylish"></li>
+    		<li>
+           <label class="fl">折扣</label>
+           <input type="text" placeholder="数字" class="fl" style="width: 25%" id="discount_a" onkeyup="if(isNaN(value))execCommand('undo')" onafterpaste="if(isNaN(value))execCommand('undo')">
+           <i class="fl">—</i>
+           <input type="text" placeholder="数字" class="fl" style="width: 25%" id="discount_b" onkeyup="if(isNaN(value))execCommand('undo')" onafterpaste="if(isNaN(value))execCommand('undo')">
+           <i>折</i>
+           <div class="clearfix" style="clear: both;"></div>
+        </li>
+    		<li><span class="line"></span></li>
+    		<li><button onclick="submit_JK()">提交</button></li>
+    	</ul>
+      </div>
+    </div>
+
+    
+
+</body>
+</html>

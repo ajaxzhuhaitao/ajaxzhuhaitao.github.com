@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="css/bootstrap.css"/>
+  <link rel="stylesheet" type="text/css" href="css/yz_index.css"/>
+  <style>
+    .panel-body p{
+      font-size:15px;
+    }
+  </style>
+</head>
+<body>
+<div class="header"></div>
+<div id="main">
+  <div class="container-fluid">
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingOne">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              企业文化
+            </a>
+          </h4>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            <p>燕姿服饰有限公司成立于2004年，公司总部现在位于中国交通曲扭河南省省会--郑州，是代理销售中高档品牌服装连锁专业销售公司，公司总部按总经理领导下的行政人事部、商品部、运营部、财务部四个部门的组织架构管理公司进、销、存及人员、财务工作，实施公司运营管理。公司倡导以人为本，以为客户服务为导向，以“造福百姓、美丽人生”为经营宗旨，在“团结进取，超越自我，追求卓越”的企业精神引领下，在“科技务实、创新发展”的管理理念指导下，全力打造“以顾客为中心，以服务为己任”的经营理念，推崇“员工第一，客户第二、燕姿第三”的营销理念。现已成为具有成熟经营理念于管理体系的服装经销企业，拥有众多的顾客群体与专业、和谐、向上的职业化管理团队。</p>
+            <hr/>
+            <h3>公司环境一角</h3><br/>
+            <img src="img/culture/c2.jpg" class="img-responsive"/>
+            <br/><br/>
+            <img src="img/culture/c3.jpg" class="img-responsive"/>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingTwo">
+          <h4 class="panel-title">
+            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              会员制度
+            </a>
+          </h4>
+        </div>
+        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+          <div class="panel-body">
+            <img src="img/culture/c4.jpg" class="img-responsive"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="footer"></div>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.js"></script>
+<script>
+  $('.header').load('headerPage.html');
+  $('.footer').load('footerPage.html');
+</script>
+</body>
+</html>

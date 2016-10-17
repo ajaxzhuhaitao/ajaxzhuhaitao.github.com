@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>手机报名</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link rel="stylesheet" href="css/mobile.css">
+    <script src="script/jquery-1.8.3.js"></script>
+    <script type="text/javascript" src="script/mobile.js"></script>
+</head>
+<body>
+
+   <!--弹框-->
+   <div class="pop">
+        <ul class="ensure">
+            <li id="msg">确定删除吗？</li>
+            <li>
+              <span id="sure" onclick="shut()">确定</span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="JP">
+     <div class="head">供货商报名入口</div>
+      <img src="http://image.wejiji.com/home/Images/mbanner1.jpg">
+      <div class="main">
+        <ul>
+            <li><input type="text" placeholder="老板姓名" id="bossname"></li>
+            <li><input type="text" placeholder="手机号" id="phonenumber"></li>
+            <li><input type="text" placeholder="公司名称" id="company"></li>
+            <li><input type="text" placeholder="运营品牌" id="brand"></li>
+        <li><input type="text" placeholder="经营品类" id="category2"></li>
+            <li>
+           <label class="fl">折扣</label>
+           <input type="text" placeholder="数字" class="fl" style="width: 25%" id="discount_c" onkeyup="if(isNaN(value))execCommand('undo')" onafterpaste="if(isNaN(value))execCommand('undo')">
+           <i class="fl">—</i>
+           <input type="text" placeholder="数字" class="fl" style="width: 25%" id="discount_d" onkeyup="if(isNaN(value))execCommand('undo')" onafterpaste="if(isNaN(value))execCommand('undo')">
+           <i>折</i>
+           <div class="clearfix" style="clear: both;"></div>
+        </li>
+            <li>
+                <label class="fl">公司类型</label> 
+                  <select name="type" id="type" class="fr">
+                    <option value="品牌">品牌</option>
+                    <option value="工厂">工厂</option>
+                    <option value="设计师工作室">设计师工作室</option>
+                </select>
+                <div class="clearfix" style="clear: both;"></div>
+            </li>
+            <!-- <li>
+                <label class="fl">经营品类</label>
+                 <select name="type" id="category2" class="fr">
+                    <option value="女装">女装</option>
+                    <option value="男装">男装</option>
+                    <option value="童装">童装</option>
+                    <option value="鞋">鞋</option>
+                    <option value="配饰">配饰</option>
+            </select>
+            <div class="clearfix" style="clear: both;"></div>
+            </li> -->
+            <li><label class="fl">有工厂</label> 
+            <select name="type" id="factory">
+                    <option value="是">是</option>
+                    <option value="否">否</option>
+            </select>
+            </li>
+            <li><span class="line"></span></li>
+            <li><button onclick="submit_JP()">提交</button></li>
+        </ul>
+      </div>
+    </div>
+
+</body>
+</html>

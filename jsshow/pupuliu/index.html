@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+<style>
+	*{
+		margin:0;
+		padding: 0;
+		list-style: none;
+	}
+	#div1{
+		/*overflow:hidden;*/
+	}
+	ul{
+		float: left;
+		width: 200px;
+		border:1px solid #000;
+		margin:10px;
+	}
+	li{
+		width: 180px;
+		margin:10px;
+	}
+</style>
+<script>
+	function rnd(n,m){
+		return parseInt(Math.random()*(m-n)+n);
+	}
+	window.onload = function(){
+		var oDiv = document.getElementById('div1');
+		var aUl = oDiv.children;
+		// 1、创建li - 只管创建不管添加 高度200-400
+		function createLi(){
+			var oLi = document.createElement('li');
+			oLi.style.height = rnd(200,400) + 'px';
+			oLi.style.background = 'rgb('+rnd(0,256)+','+rnd(0,256)+','+rnd(0,256)+')';
+			return oLi;
+		}
+		// 添加多少个 - 20
+		function createLi20(){
+			var ulArr = [];
+			for(var i = 0; i < 20; i++){
+				// 如何找到最小的ul
+				for(var j = 0; j < aUl.length; j++){
+					ulArr.push(aUl[j]);
+				}
+				ulArr.sort(function(n1,n2){
+					return  n1.offsetHeight - n2.offsetHeight;
+				});
+				ulArr[0].appendChild(createLi());
+			}
+		}
+		createLi20();
+		// 再次加载的时候
+		window.onscroll = function(){
+			// 滚动条距顶部
+			var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+			// 可视区高度
+			var winH = document.documentElement.clientHeight;
+
+			var scrollBottom = scrollTop + winH;
+			// document.title = oDiv.scrollHeight;
+			if(scrollBottom >= document.body.scrollHeight){
+				createLi20();
+			}
+		}
+	}
+</script>
+</head>
+<body>
+	<div id="div1">
+		<ul></ul>
+		<ul></ul>
+		<ul></ul>
+		<ul></ul>
+	</div>
+</body>
+</html>
